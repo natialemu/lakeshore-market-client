@@ -1,0 +1,566 @@
+body{
+	overflow-x:hidden;
+}
+.project
+{
+	
+	text-align: center;
+	margin: 6px;
+}
+.navbar-default{
+	margin-bottom: 0px;
+}
+
+.myjumbotron{
+	background-image: url("../images/stocksnap2.jpg");
+	background-size: cover;
+	height: 700px;
+	background-attachment: fixed;
+	text-align: center;
+	color: #FFFFE5;
+	font-family: 'Lobster', cursive;
+	margin-top: 0px;
+	
+}
+.projectArchive{
+	background-color:rgba(200,200,200,0.1);
+	text-align: center;
+	border-radius: 35px;
+	
+	height: 7%;
+	
+	
+	
+}
+.projectArchive .btn.btn-default.btn-sm{
+	border-radius: 35px;
+	position: relative;
+	left: 0%;
+}
+.descriptions{
+	display: none;
+}
+.cursive{
+	font-family: 'Lobster', cursive;
+}
+.container-fluid .navbar-header .mynavigation {
+	font-family: 'Lobster', cursive;
+	
+	
+	
+}
+
+
+.jumbotron p .btn.btn-primary.btn-lg:hover{
+	background-color:#181411;
+}
+.moreContainer .btn.btn-primary.btn-lg:hover{
+	background-color: #181411;
+	
+}
+.imagePosition .btn.btn-primary.btn-md{
+	display: none;
+	border-radius: 35px;
+	
+}
+
+.imagePosition .btn.btn-primary.btn-md:hover{
+	background-color: #181411;
+	
+}
+#moreButton{
+	   border-radius: 35px;
+	   border-color: FFFFE5;
+	   position: relative;
+	   left: 43%;
+	   
+}
+#jumboButton{
+	border-radius: 35px;
+	font-family: 'Lobster', cursive;
+	color: #FFFFE5;
+	border-color: #FFFFE5;
+	position: relative;
+	left: 0%;
+}
+
+#mynavbar{
+	margin-bottom:0px;
+	font-family: 'Lobster', cursive;
+}
+
+
+
+ul.unstyled{
+	list-style: none;
+	font-size: 14px;
+	color: white;
+	padding: 0;
+	text-align: center;
+}
+#wholeCarousel{
+	margin: 0;
+}
+
+.section .title{
+	margin: 0 auto;
+	display: block;
+	
+}
+.title{
+	text-align: center;
+}
+.separator-container
+.separator{
+	color: #c5a47e;
+	margin: 0 auto 1em;
+	width: 11em;
+}
+
+.projectDesc{
+	box-sizing: border-box;
+	
+}
+
+
+a{
+	transition: all 150ms linear;
+	color: #777777;
+	text-decoration: none;
+}
+
+a: -webkit-any-link{
+	cursor: auto;
+}
+h5{
+	display: block;
+	-webkit-margin-before: 1.67em;
+	-webkit-margin-after: 1.67em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	text-align: center;
+	overflow: hidden;
+}
+
+h3{
+	display: block;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	text-align: center;
+	overflow: hidden;
+	
+}
+.imagePosition{
+	height: 220px;
+	width: 100%;
+	
+	border-radius: 10px;
+	opacity: 0.65;
+	
+	
+	
+}
+.projectImage{
+	height: 220px;
+	width: 100%;
+	background-color: #10100a;
+	border-radius: 10px;
+	opacity: 0.65;
+	margin-top:27px;
+}
+.btn:hover{
+	background-color: #181411;
+	
+}
+.btn{
+	float: none;
+	
+	transition-property: all;
+	transition-duration: 150nm;
+	transition-timing-function: ease-out;
+	transition-delay: initial;
+	border-width: 1px;
+	border-style: solid;
+	position: relative;
+	left: 32%;
+	top: 40%;
+	text-align: center;
+	vertical-align: middle;
+	font-weight:600;
+	line-height: 1;
+	background-color: transparent;
+	opacity: 0.88;
+	border-color: black;
+	color: black;
+	
+}
+
+.btnDisplay{
+	display: none;
+	position: absolute;
+	top: 24%;
+	
+}
+
+
+
+#myCarousel{
+	opacity: 0.8;
+}
+.carouselContent{
+	opacity: 1;
+}
+.moreContainer{
+	margin-right: 230px;
+}
+.more{
+	
+	width: 50%;
+	height: 50px;
+	border-color: black;
+	color: black;
+	font-size: 16px;
+	font-weight: 400;
+	border-width: 3px;
+	
+	
+	
+	
+	
+}
+
+
+
+footer{
+	font-size: 14px;
+	line-height: 20px;
+	padding: 30px 0;
+	position: relative;
+	
+	background: #333;
+	color: #eee;
+}
+
+.copyright{
+	text-align: center;
+}
+.language_list{
+	text-align: center;
+}
+.language_list li{
+	list-style: none;
+	margin-right: 40px;
+}
+.address{
+	text-align: center;
+}
+
+.shortDesciption{
+	text-align: center;
+	margin-top: 1px;
+
+}
+#carouselContent{
+	position: absolute;
+	top: 14%;
+	left: 45%;
+	
+}
+#java{
+	position: absolute;
+	top: 14%;
+	left: 68%;
+	
+}
+#cplusplus{
+	position: absolute;
+	top: 17%;
+	left: 14%;
+	
+}
+#csharp{
+	position: absolute;
+	top: 50%;
+	left: -19%;
+	
+}
+#python{
+	position: absolute;
+	top: 58%;
+	left: 63%;
+	
+}
+#javascript{
+	position: absolute;
+	top: 40%;
+	left: 42%;
+	
+}
+#node{
+	position: absolute;
+	top: 62%;
+	left: -30%;
+	
+}
+#php{
+	position: absolute;
+	top: 36%;
+	left: 76%;
+	
+}
+#assembly{
+	position: absolute;
+	top: 22%;
+	left: 48%;
+	
+}
+#reactnative{
+	position: absolute;
+	top: 69%;
+	left: 68%;
+	
+}
+#cordova{
+	position: absolute;
+	top: 80%;
+	left:-40%;
+	
+}
+#mysql{
+	position: absolute;
+	top: 14%;
+	left: -30%;
+	
+}
+#pintos{
+	position: absolute;
+	top: 43%;
+	left: -46%;
+}
+
+#linux{
+	position: absolute;
+	top: 29%;
+	left: -10%;
+}
+
+#angular{
+	position: absolute;
+	top: 53%;
+	left: 20%;
+}
+#hadoop{
+	position: absolute;
+	top: 69%;
+	left: 10%;
+}
+
+#programminglanguages{
+	position: absolute;
+	top: 2%;
+	left: 8%;
+	font-weight: 700;
+	
+}
+
+#carousel2image{
+	background-color: rgba(10,10,10,0.5)
+}
+
+#intermediateoop{
+	position: absolute;
+	top: 5%;
+	left: -40%;
+}
+
+#database{
+	position: absolute;
+	top: 10%;
+	left: 20%;
+}
+
+#wirelessdevelopement{
+	position: absolute;
+	top: 5%;
+	left: 70%;
+}
+
+#operatingsystems{
+	position: absolute;
+	top: 43%;
+	left: -40%;
+}
+
+#datastructures{
+	position: absolute;
+	top: 83%;
+	left: 70%;
+}
+
+#algorithms{
+	position: absolute;
+	top: 43%;
+	left: 70%;
+}
+
+#machinelearning{
+	position: absolute;
+	top: 83%;
+	left: -40%;
+}
+#interests{
+	position: absolute;
+	top: 5%;
+	left: 12%;
+}
+
+#Soccer{
+	position: absolute;
+	top: 69%;
+	left: 60%;
+}
+
+#education{
+	position: absolute;
+	top: 23%;
+	left: 7%;
+}
+
+#volunteering{
+	position: absolute;
+	top: 20%;
+	left: 58%;
+}
+
+#technology{
+	position: absolute;
+	top: 37%;
+	left: -50%;
+}
+#cryptic-crosswords{
+	position: absolute;
+	top: 73%;
+	left: -30%;
+}
+#humanrights{
+	position: absolute;
+	top: 36%;
+	left: 50%;
+}
+
+#environment{
+	position: absolute;
+	top: 52%;
+	left: 11%;
+}
+.carouselImage{
+	height: auto;
+	width: auto;
+	max-width: 1600px;
+	max-height: 1050px;
+}
+
+.modalPicture{
+	max-height: 250px;
+	max-width: 250px;
+}
+
+#image1{
+	background-image: url("../images/2048Actual.png");
+	
+}
+#image1p{
+	background-image: url("../images/flightBooker.PNG");
+}
+#image2{
+	background-image: url("../images/WordNet.png");
+}
+#image3{
+	background-image: url("../images/pintos1.png");
+}
+#image3p{
+	background-image: url("../images/jumpingCubes.jpg");
+}
+#image4{
+	background-image: url("../images/pintos2.png");
+}
+#image4p{
+	background-image: url("../images/versionControl.png");
+}
+#image5{
+	background-image: url("../images/markov_chain.png");
+}
+#image5p{
+	background-image: url("../images/mazeSolver.png");
+}
+#image6{
+	background-image: url("../images/bearMaps.png");
+}
+
+#image10{
+	background-image: url("../images/comingSoon2.jpg");
+}
+
+#image11{
+	background-image: url("../images/comingSoon2.jpg");
+}
+
+#image12{
+	background-image: url("../images/comingSoon2.jpg");
+}
+
+#image13{
+	background-image: url("../images/comingSoon2.jpg");
+}
+#image14{
+	background-image: url("../images/comingSoon2.jpg");
+}
+
+#image15{
+	background-image: url("../images/shell.png");
+}
+#image16{
+	background-image: url("../images/comingSoon2.jpg");
+}
+#image98{
+	background-image: url("../images/website.png");
+}
+#image99{
+	background-image: url("../images/alertApp.jpeg");
+}
+
+#collegeapplicationtool{
+	display: none;
+}
+
+
+
+.icone-social{
+	position: relative;
+	left: 47%;
+}
+.modalProjectClass{
+	float: left;
+}
+.gitlogo{
+	margin-left: 30px;
+	margin-top:20px;
+}
+.footerLogo1{
+	margin-right:5px;
+	
+}
+.footerLogo2{
+	margin-left:5px;
+	
+	
+}
+
+
+
+
+
+
+
