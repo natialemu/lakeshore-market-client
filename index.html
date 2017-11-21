@@ -2,9 +2,190 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <link href="styles/maia.experimental.css" rel="stylesheet">
+
+    <link href="styles/market_style.css" rel="stylesheet">
+
+    <link href="styles/main-body-style.css" rel="stylesheet">
+
+    <link href="styles/bootstrap.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <!-- JQuery-->
+
+
+
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&amp;subset=latin-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,600&amp;subset=latin-ext" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet" type="text/css">
+
+        <script src="scripts/handlebars-v4.0.5.js"></script>	<!-- handlebar library -->
+    <script src="scripts/bootstrap.min.js"></script> <!-- bootsrap libraries -->
+    <script src="scripts/jquery.lettering.js"></script>	<!-- lettering library -->
+    <script src="scripts/jquery.textillate.js"></script>	<!-- textillate library -->
+
     <title>Lakeshore Martket</title>
 </head>
 <body>
+   <div id ="app">
+
+       <!-- header for homepage -->
+       <header role="banner" class="page-header">
+           <nav role="navigation" class="page-header__drawer sticky-header">
+               <div class="page-header__content content-controls content-controls--flex">
+
+                   <div class="page-nav__header">
+                       <a href="#" class="page-logo">
+                           <h2 class="logo-style">Lakeshore Market</h2>
+                       </a>
+                       <div class="page-nav__login">
+                           <div class="upper">
+                               <a href="#" class="top-level nav-item" btn-primary goal-header-cta>
+                                   Sign up
+                               </a>
+
+                               <a href="#" class="top-level nav-item">
+                                   Login
+                               </a>
+
+                           </div>
+
+
+                       </div>
+                   </div>
+
+                   <div class="page-nav__divider">
+
+                   </div>
+
+
+
+
+
+
+               </div>
+           </nav>
+       </header>
+
+       <div class="jumbotron jumbotron-codelines">
+           <div class="container-lg p-responsive position-relative">
+               <div class="d-md-flex flex-items-center gutter-md-spacious">
+                   <!-- jumbotron header and description -->
+                   <div class="col-md-7 text-center text-md-left">
+
+                       <h1 class="alt-h0 text-white lh-condensed-ultra mb-3">
+                           Lakeshore market
+                       </h1>
+                       <p class="alt-lead mb-4">
+                           description goes here
+                           description goes here
+                           description goes heredescription goes here
+                           description goes heredescription goes here
+                           description goes here
+                           description goes heredescription goes here
+                           description goes heredescription goes here
+                           description goes here
+
+
+                       </p>
+
+                   </div>
+
+                   <!-- sign up page -->
+                   <div class="mx-auto col-sm-8 col-md-5 hide-sm">
+
+                       <div class="rounded-1 text-gray bg-gray-light py-4 px-4 px-md3 px-lg-4">
+                           <form accept-charset="UTF-8" action="/join" autocomplete="off" class="home-hero-signup js-signup-form" method="post">
+                               <div style="margin:0;padding: 0;display: inline"></div>
+                               <dl class="form-group mt-0">
+                                   <dt class="input-label">
+                                       <label class="form-label-f5" for="user[login]">Username</label>
+
+
+                                   </dt>
+                                   <dd>
+                                       <input type="text" name="user[login]" id="user[login]" class="form-control form-control-lg input-block" placeholder="Pick a username">
+
+                                   </dd>
+
+                               </dl>
+                               <dl class="form-group ">
+                                   <dt class="input-label">
+                                       <label class="form-label-f5" for="user[email]">Email</label>
+
+
+                                   </dt>
+                                   <dd>
+                                       <input type="text" name="user[email]" id="user[email]" class="form-control form-control-lg input-block" placeholder="example@example.com">
+
+                                   </dd>
+
+
+                               </dl>
+                               <dl class="form-group ">
+
+                                   <dt class="input-label">
+                                       <label class="form-label-f5" for="user[password]">Password</label>
+
+
+                                   </dt>
+                                   <dd>
+                                       <input type="text" name="user[email]" id="user[password]" class="form-control form-control-lg input-block" placeholder="Create a password">
+
+                                   </dd>
+
+                               </dl>
+
+                               <input type="hidden" name="source" class="js-signup-source" value="fom-home">
+                               <input id="required_field_811a" name="required_field" style="display: none" type="text" class="form-control">
+                               <input  name="timestamp" style="display: none" type="hidden" value="1511122354537273636" class="form-control">
+
+
+                               <button class="btn btn-primary btn-large f4 btn-block" type="submit">Sign up</button>
+
+                           </form>
+                       </div>
+
+                   </div>
+
+                   <!-- another container -->
+                   <div class="d-sm-none text-center">
+
+                   </div>
+
+               </div>
+
+
+           </div>
+       </div>
+
+
+       <!-- main dody -->
+       <main id="a11y-main" role="main" tabindex="-1" class="page-body">
+           <section class="section section--static section--home-intro bg bg--white">
+               <div class="section__inner grid">
+                   <div class="grid_item">
+                       <h2 class="section__header">
+                          Products
+                       </h2>
+                       <ul class="grid">
+
+                           <!-- list items will be inserted dymanically -->
+
+                       </ul>
+
+
+                       </h2>
+                   </div>
+               </div>
+           </section>
+       </main>
+
+
+
+   </div>
 
 </body>
 </html>

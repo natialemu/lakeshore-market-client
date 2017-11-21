@@ -1,0 +1,157 @@
+body{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    background-color: #fff;
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body * {
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    display: block;
+}
+.page-header{
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.2);
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: subpixel-antialiased;
+    height: 112px;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+    margin-bottom: 30px;
+}
+.sticky-header {
+    background-color: #fff;
+    width: 100%;
+}
+@media only screen and (max-width: 680px) {
+    .page-header.content-controls, .page-header .content-controls {
+        overflow-y: auto;
+    }
+}
+
+.page-header.content-controls, .page-header .content-controls {
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.page-header .page-header__content {
+    background: #fff;
+}
+
+@media only screen and (max-width: 680px) {
+    .page-nav__header {
+        display: inline-block;
+        line-height: 56px;
+    }
+}
+
+.page-nav__header {
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    line-height: 64px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 680px) {
+    .page-logo {
+        line-height: 56px;
+        margin-right: 0;
+    }
+}
+.page-logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+body a {
+    color: #3266d5;
+    font-weight: 500;
+    text-decoration: none;
+}
+@media only screen and (max-width: 680px) {
+    .page-nav__login {
+        float: right;
+    }
+}
+
+.page-nav__header a.btn-primary {
+    color: #fff;
+    background: #85c525;
+    border-radius: 5px;
+    padding: 5px 16px 6px;
+}
+.page-nav__header a {
+    font-family: "Franklin-Gothic-URW-Book",sans-serif;
+    font-size: 18px;
+    color: #062942;
+}
+.top-level {
+    padding-top: 7px;
+    padding-bottom: 28px;
+    display: inline-block;
+}
+@media screen and (max-width: 768px) {
+    .nav-item {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-item {
+        margin-left: 15px;
+    }
+}
+.nav-item {
+    margin-left: 30px;
+}
+.logo-style{
+    margin-top: 0px;
+}
+@media only screen and (max-width: 680px) {
+    .page-nav__divider {
+        top: 56px;
+    }
+
+}
+.page-nav__divider {
+    border-bottom: 1px solid rgba(0,0,0,.05);
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 64px;
+}
+
+.page-nav {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    vertical-align: baseline;
+    width: 100%;
+}
+body .upper {
+    text-transform: uppercase;
+}
