@@ -2,9 +2,105 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <link href="styles/maia.experimental.css" rel="stylesheet">
+
+    <link href="styles/market_style.css" rel="stylesheet">
+
+    <link href="styles/main-body-style.css" rel="stylesheet">
+
+    <link href="styles/bootstrap.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <!-- JQuery-->
+
+
+
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&amp;subset=latin-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,600&amp;subset=latin-ext" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet" type="text/css">
+
+        <script src="scripts/handlebars-v4.0.5.js"></script>	<!-- handlebar library -->
+    <script src="scripts/bootstrap.min.js"></script> <!-- bootsrap libraries -->
+    <script src="scripts/jquery.lettering.js"></script>	<!-- lettering library -->
+    <script src="scripts/jquery.textillate.js"></script>	<!-- textillate library -->
+
     <title>Login</title>
 </head>
-<body>
+<body style="line-height: 1.5; word-wrap: break-word;" class="logged-out env-production page-responsive min-width-0 session-authentication intent-mouse">
+
+
+<!-- header for homepage -->
+<header role="banner" class="page-header">
+    <nav role="navigation" class="page-header__drawer sticky-header">
+        <div class="page-header__content content-controls content-controls--flex">
+
+            <div class="page-nav__header">
+                <a href="#" class="page-logo">
+                    <h2 class="logo-style">Lakeshore Market</h2>
+                </a>
+
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+    </nav>
+</header>
+
+     <div role="main">
+         <div id="js-pjax-container">
+             <div class="auth-form px-3" id="login">
+                 <form accept-charset="UTF-8" action="/session" method="post">
+                     <div style="margin: 0; padding: 0;display: inline">
+
+                     </div>
+
+                     <div class="auth-form-header p-0">
+                         <h1>
+                             Sign in
+                         </h1>
+
+                     </div>
+
+                     <div class="auth-form-body mt-3">
+                         <label for="login_field">
+                             Username or email
+                         </label>
+                         <input  autofocus="autofocus" tabindex="1" class="form-control input-block" id="login_field" name="login" type="text">
+
+                         <label for="password">
+                             Password
+
+                             <a href="#" class="label-link">
+                                 Forgot password?
+                             </a>
+                         </label>
+
+                         <input class="form-control form-control input-block" id="password" tabindex="2" type="password">
+
+                         <input class="btn btn-primary btn-block" tabindex="3" type="submit" value="Sign in">
+                     </div>
+
+                 </form>
+
+                 <p class="create-account-callout mt-3">
+                     Don't have an account?
+                     <a href="#"> Create an account</a>.
+
+                 </p>
+             </div>
+         </div>
+
+
+     </div>
+
 
 </body>
 </html>

@@ -284,3 +284,42 @@ dd {
         width: 51.66666667% !important;
     }
 }
+
+.session-authentication .create-account-callout {
+    padding: 15px 20px;
+    text-align: center;
+    border: 1px solid #d8dee2;
+    border-radius: 5px;
+}
+.mt-3 {
+    margin-top: 16px !important;
+}
+.session-authentication .label-link {
+    float: right;
+    font-size: 12px;
+}
+.session-authentication .auth-form-header {
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+.auth-form-header {
+    padding: 10px 20px;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+    background-color: #829aa8;
+    border: 1px solid #768995;
+    border-radius: 3px 3px 0 0;
+}
+.px-3 {
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+}
+.auth-form {
+    width: 340px;
+    margin: 0 auto;
+}
