@@ -14,9 +14,10 @@ body * {
     padding: 0;
 }
 
-div{
+div,nav{
     display: block;
 }
+
 .page-header{
     background-color: #fff;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.2);
