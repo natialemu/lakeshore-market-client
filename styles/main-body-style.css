@@ -333,3 +333,7 @@ dd {
     background-color: #B71C1C !important;
     border-color: #B71C1C !important;
 }
+
+html{
+    padding: 0 !important;
+}

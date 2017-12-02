@@ -23,11 +23,12 @@ div,nav{
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.2);
     -moz-osx-font-smoothing: auto;
     -webkit-font-smoothing: subpixel-antialiased;
-    height: 112px;
+    height: 53px;
     position: relative;
     width: 100%;
     z-index: 10;
-    margin-bottom: 30px;
+    margin-top: 0px!important;
+    margin-bottom: 0 !important;
 }
 .sticky-header {
     background-color: #fff;

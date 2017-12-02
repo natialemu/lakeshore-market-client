@@ -5,6 +5,10 @@
 	
 	<link href="../styles/homepage-style.css" rel="stylesheet">
 	<link href="../styles/portfolio.css" rel="stylesheet">
+    <link href="../styles/bootstrap.css" rel="stylesheet">
+    <link href="../styles/homepage-content-box.css" rel="stylesheet">
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <!-- JQuery-->
 
@@ -23,105 +27,81 @@
 </head>
 <body style="padding-top:0;" class="disabled-focus">
 
-    <!-- header -->
-    <header role="banner" class="page-header-home">
-	    <nav role="navigation" class="page-header__drawer open-drawer2 sticky-header sticky-header--transition" id="page-header__drawer" style="top:0px;">
-			<div class="page-header__content content-controls-home content-controls--flex"  style="min-width: 780px;" >
-				
 
-				<!-- left side of header -->
-					<div class="page-nav__header-home">
-					
-					   <button class="page-nav__header-button page-nav__header-open">
-					      <svg height="24" viewBox="0 0 24 24" width="24" class="svg-icon">
-						     <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"> </path>
-						  </svg>
-					   </button>
+    <nav style="box-sizing: border-box;" id="mynavbar" class="navbar navbar-default navbar-fixed-top navbar-burger">
 
-					    <a class="page-logo" href="#">
-						    
-							<span id="homepage_logo">Logo</span>
-					    </a>
-						
-					</div>
-					<!-- right side of header -->
-					<div class="page-nav-home" >
 
-						<div class="" style="margin-right:20px;">
-							<div class="">
-									<span class="">Username</span>
-							</div>
 
-						</div>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Lakeshore Market</a>
 
-						<div class=""  >
-							<a  href="#" style="min-width:240px;">
-							   <!-- iframe goes here -->
-							</a>
-							
-							<a href="#" >
-							   <!-- left most widget of the right bunch -->
-							   Profile-picture
-							</a>
-							
-							<a href="#" >
-								<!-- second widget of the right bunch -->
-								Shopping-cart
-							</a>
-							
-							<a href="#" >
-								 <!-- right most widget of the right bunch -->
-								 Settings
-							</a>
-							<a href="#" >
-								 <!-- right most widget of the right bunch -->
-								 Log-out
-							</a>
-							
+            <!-- start colllapsed navbar  -->
+            <div class="navbar-header navbar-right">
+                <button
+                        id="menu-toggle"
+                        type="button"
+                        class="navbar-toggle collapsed"
+                        data-toggle="collapse"
+                        data-target="#main_navbar"
+                        aria-expanded="false">
+                    <span class="sr-only"> Toggle navigation </span>
+                    <span class="icon-bar bar1"> </span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
 
-						</div>
-					</div>
 
-					
-					
-					
+                </button>
+            </div> <!-- / colllapsed navbar  -->
 
-				
+            <!-- start un-colllapsed navbar  -->
+            <div class="collapse navbar-collapse mynavigation navbar-right" id="main_navbar">
+                <ul class="nav navbar-nav">
+                    <li class="welcome" ><h4 style="color: #ffffff">Welcome seller</h4></li>
+                    <li class="active" style="margin-left: 20px;"><a href = "#">Home</a></li>
+                    <li><a href = "#">Account</a></li>
+                    <li><a href = "#">Orders</a></li>
+                    <li><a href = "#">Inventory</a></li>
+                    <li><a href = "#">Transactions</a></li>
+                    <li><a href = "#">Log out</a></li>
+                </ul>
+            </div><!-- / un-colllapsed navbar  -->
 
-			</div>
-		</nav>
+        </div> <!-- /container  -->
+    </nav>
 
-       
-		
-		<div class="page-header__job-search">
-		
-		 <div class="content-controls-home">
-		     <div class="page-header__job-search__container">
-			    <form id="job-search-form" method="get" action="#" autocomplete="off" role="search">
-				
-				   <input type="search" name="j" class="page-header__job-search__input" placeholder="Search products" aria-label="Search jobs">
-				   <input type="hidden" name="products_url" value="#">
-				   
-				   <button class="page-header__job-search__icon" aria-label="Search jobs" disabled="true">
-				      <svg fill="#606060" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-					     <path class="magnifying-glass-path" d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
-						 </path>
-						 
-						 <path d="M0 0h24v24H0z" fill="none">
-						 </path>
-					  </svg>
-				   </button>
-				
+
+
+
+
+
+
+
+	<div style="margin-top:80px;" class="page-header__job-search">
+
+		<div class="content-controls-home">
+			<div class="page-header__job-search__container">
+				<form id="job-search-form" method="get" action="#" autocomplete="off" role="search">
+
+					<input type="search" name="j" class="page-header__job-search__input" placeholder="Search products" aria-label="Search jobs">
+					<input type="hidden" name="products_url" value="#">
+
+					<button class="page-header__job-search__icon" aria-label="Search jobs" disabled="true">
+						<svg fill="#606060" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path class="magnifying-glass-path" d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+							</path>
+
+							<path d="M0 0h24v24H0z" fill="none">
+							</path>
+						</svg>
+					</button>
+
 				</form>
-			 </div>
-		 
-		 </div>
-		
-		
-        </div>
+			</div>
 
-    
-	</header>
+		</div>
+
+
+	</div>
 	
 	
 		
