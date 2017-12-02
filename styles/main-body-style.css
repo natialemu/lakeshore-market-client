@@ -328,3 +328,8 @@ dd {
 
 
 }
+
+.btn-primary{
+    background-color: #B71C1C !important;
+    border-color: #B71C1C !important;
+}

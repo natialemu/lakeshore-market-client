@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <link href="styles/homepage-style.css" rel="stylesheet">
     <link href="styles/portfolio.css" rel="stylesheet">
+
     <link href="styles/checkout-style.css" rel="stylesheet">
+    <link href="styles/settings-style.css" rel="stylesheet">
+    <link href="styles/bootstrap.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <!-- JQuery-->
 
@@ -22,7 +25,7 @@
 
     <title>Account</title>
 </head>
-<body>
+<body class="page-account-overview is-loggedin reboot overview-student-us-upsell">
 
 
 
@@ -94,17 +97,144 @@
         </div>
     </nav>
 
-    <div class="page-row--split-blocks android-section" style="margin-bottom:40px; margin-left:40%;">
-
-        <h2 class="content-subtitle">
-            Shopping cart
-        </h2>
-
-
-    </div>
-
 
 </header>
+
+<div class="wrap">
+    <div class="content-wrapper">
+        <div class="container container-content">
+            <div class="row overlapping_container_size">
+                <div class="col-sm-3 hidden-xs">
+
+                    <div class="sidebar">
+
+                        <img class="user-img img-circle " src="#" alt="nathnael2">
+
+
+
+                        <ul class="nav-inverse nav-tabs nav-stacked">
+
+
+                            <li class="active" id="submenu-item-account-overview">
+                                <a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-home"></use></svg> Account overview</a>
+                            </li>
+
+
+                            <li id="submenu-item-contact-information">
+                                <a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-redeem"></use></svg>Edit Contact information</a>
+                            </li>
+
+
+                            <li id="submenu-item-location-information">
+                                <a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-edit"></use></svg> Edit Location preferences</a>
+                            </li>
+
+
+                            <li id="submenu-item-payment-information">
+                                <a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-locked"></use></svg> Edit Payment information</a>
+                            </li>
+
+
+                            <li id="submenu-item-change-password">
+                                <a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-notifications"></use></svg> Change password</a>
+                            </li>
+
+
+
+
+
+                            <li id="submenu-item-subscription">
+                                <a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-payment"></use></svg> Subscription</a>
+                            </li>
+
+
+
+                        </ul>
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-sm-9 overlapping_container ">
+                    <div class="content ">
+
+
+
+                        <div class="page-header">
+                            <h1>Account overview</h1>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-6">
+                              <div class="well card">
+                                  <h3 class="text-primary">Some form will go here</h3>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="well card">
+                                    <h3 class="text-primary">Some other form will go here</h3>
+                                </div>                            </div>
+
+                        </div>
+
+                        <div class="well card">
+                            <h3 class="text-primary">Card 3</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    Username information
+                                </div>
+                                <div class="col-md-6">
+                                    Username information
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+                        <script>
+
+                           /* $(function() {
+                                var $modal = $('#one-click-resubscription-confirm-modal');
+                                var $modalConfirm = $modal.find('.btn-modal-agree');
+                                var $modalClose = $modal.find('.btn-modal-cancel');
+                                var $resubscribeCta = $('.opt-back-cta');
+
+                                $resubscribeCta.click(function(event) {
+                                    event.preventDefault();
+                                    $modal.modal('show');
+                                });
+
+                                $modalConfirm.click(function(event) {
+                                    $modalClose.hide();
+                                    $modalConfirm.prop('disabled', true).text('RENEWING...');
+                                    window.location.href = '/us/account/subscription/ocr/?_csrf=f21IZABpuZkeQf21TQFZN_xvU5m2FueN3s8qwrDRoHQ';
+                                });
+                            });*/
+
+                        </script>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
 
 
 </body>
