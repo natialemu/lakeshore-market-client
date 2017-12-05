@@ -11,11 +11,11 @@
 
     <link href="styles/bootstrap.css" rel="stylesheet">
 
+    <script src="scripts/log-in-js.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <!-- JQuery-->
 
 
-
-    </script>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&amp;subset=latin-ext" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,600&amp;subset=latin-ext" rel="stylesheet">
@@ -25,10 +25,14 @@
     <script src="scripts/bootstrap.min.js"></script> <!-- bootsrap libraries -->
     <script src="scripts/jquery.lettering.js"></script>	<!-- lettering library -->
     <script src="scripts/jquery.textillate.js"></script>	<!-- textillate library -->
+    <script src="scripts/log-in-js.js"></script>
 
     <title>Login</title>
 </head>
 <body style="line-height: 1.5; word-wrap: break-word; " class="logged-out env-production page-responsive min-width-0 session-authentication intent-mouse">
+<script>
+
+</script>
 
 
 <!-- header for homepage -->
@@ -61,13 +65,8 @@
             <!-- start un-colllapsed navbar  -->
             <div class="collapse navbar-collapse mynavigation navbar-right" id="main_navbar">
                 <ul class="nav navbar-nav">
-                    <li class="welcome" ><h4 style="color: #ffffff">Welcome seller</h4></li>
-                    <li class="active" style="margin-left: 20px;"><a href = "#">Home</a></li>
-                    <li><a href = "#">Account</a></li>
-                    <li><a href = "#">Orders</a></li>
-                    <li><a href = "#">Inventory</a></li>
-                    <li><a href = "#">Transactions</a></li>
-                    <li><a href = "#">Log out</a></li>
+                    <li class="active" style="margin-left: 20px;"><a href = "#">Log in</a></li>
+
                 </ul>
             </div><!-- / un-colllapsed navbar  -->
 
@@ -78,7 +77,7 @@
      <div role="main" style="min-height: 600px;">
          <div id="js-pjax-container">
              <div class="auth-form px-3" id="login">
-                 <form accept-charset="UTF-8" action="/session" method="post">
+                 <form accept-charset="UTF-8" id= "login_form" action="" method="post">
                      <div style="margin: 0; padding: 0;display: inline">
 
                      </div>
@@ -104,16 +103,23 @@
                              </a>
                          </label>
 
-                         <input class="form-control form-control input-block" id="password" tabindex="2" type="password">
 
-                         <input class="btn btn-primary btn-block" tabindex="3" type="submit" value="Sign in">
+                         <input class="form-control form-control input-block" id="password" name="password" tabindex="2" type="password">
+
+                         <label for="user_type">
+                             Customer or partner
+                         </label>
+                         <input  autofocus="autofocus" tabindex="1" class="form-control input-block" id="user_type" name="user_type" type="text">
+
+
+                         <input id="login_button" class="btn btn-primary btn-block" tabindex="3" type="submit" value="Sign in">
                      </div>
 
                  </form>
 
                  <p class="create-account-callout mt-3">
                      Don't have an account?
-                     <a href="#"> Create an account</a>.
+                     <a href="index.html"> Create an account</a>.
 
                  </p>
              </div>
@@ -121,7 +127,9 @@
 
 
      </div>
+<div id="sample_container">
 
+</div>
 <footer class="hashcode-footer mdl-mini-footer">
     <div class="mdl-mini-footer__left-section">
         <p class="mdl-typography--font-light">
@@ -132,15 +140,15 @@
                 Go to Homepage
             </a>
 
-            <a href="projects.html">
+            <a href="login.html">
                 Sign in
             </a>
 
-            <a href="blog.html">
+            <a href="index.html">
                 Sign up for an account
             </a>
 
-            <a href="https://www.linkedin.com/in/nathnael-alemu-1b78bb107/">
+            <a href="#">
                 About Lakeshore Market
             </a>
 

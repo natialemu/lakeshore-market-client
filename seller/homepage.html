@@ -85,66 +85,58 @@
 <div class="page-row--split-blocks android-section" style="margin-bottom:40px; position:relative; left:31%;">
 
     <h2 class="content-subtitle">
-        Most recent products
+        Most recent Orders
     </h2>
 
 
 </div>
 
 
-<!-- Products Body -->
+<script id="project-modal-template" type="text/x-handlebars-template">
+    <div class="grid__item project__item desk--one--quarter tablet--one-half">
+        <div class="caption-panel caption-panel--home">
+            <a class="caption-panel__image-wrapper" data-ga-action="project description 1_Select" data-ga-label="eccomerce, lakeshroe-market" data-ga-value="1">
+                <div class="caption-panel__image" style="background-color: #a3a3c2">
 
-<div class="page-row page-row--split-blocks page-row-project">
+                </div>
+            </a>
 
+            <div class="caption-panel__content">
+                <a data-ga-action="product description 1_Select" data-ga-label="eccomerce, lakeshroe-market" data-ga-value="1">
+                    <h3 class="image-aside__title">
 
-    <!-- Product cards -->
-    <div class="content-container content-row content-row--short">
+                        {{OrderTitle}}
 
-        <div class="grid" id="content">
-            <div class="grid__item project__item desk--one--quarter tablet--one-half">
-                <div class="caption-panel caption-panel--home">
-                    <a class="caption-panel__image-wrapper" data-ga-action="project description 1_Select" data-ga-label="eccomerce, lakeshroe-market" data-ga-value="1">
-                        <div class="caption-panel__image" style="background-color: #a3a3c2">
+                    </h3>
 
-                        </div>
+                </a>
+
+                <p class="caption-panel__text">
+                    {{OrderStatus}}
+
+                </p>
+
+                <div class="" style="margin-bottom:20px;">
+                    <a id="product2" style="margin-right:45px;"data-ga-action="product description 1_Select" data-ga-label="View" data-ga-value="1" >
+										   <span>
+										       {{OrderDate}}
+
+										   </span>
                     </a>
 
-                    <div class="caption-panel__content">
-                        <a data-ga-action="product description 1_Select" data-ga-label="eccomerce, lakeshroe-market" data-ga-value="1">
-                            <h3 class="image-aside__title">
-
-                                Harry Potter
-
-                            </h3>
-
-                        </a>
-
-                        <p class="caption-panel__text">
-                            Book
-
-                        </p>
-
-                        <div class="" style="margin-bottom:20px;">
-                            <a id="product2" style="margin-right:45px;"data-ga-action="product description 1_Select" data-ga-label="View" data-ga-value="1" >
+                    <a style="float: right; margin-left:20px;margin-right:10px;text-align:center;" id="product3" data-ga-action="product description 1_Select" data-ga-label="Add to Cart" data-ga-value="1" >
 										   <span>
-										       Star ratings
+										       {{OrderCost}}
 
 										   </span>
-                            </a>
-
-                            <a style="float: right; margin-left:20px;margin-right:10px;text-align:center;" id="product3" data-ga-action="product description 1_Select" data-ga-label="Add to Cart" data-ga-value="1" >
-										   <span>
-										       $0.00
-
-										   </span>
-                            </a>
+                    </a>
 
 
-                        </div>
+                </div>
 
 
-                        <div class="caption-panel__links">
-                            <a id="product1" style="margin-right:40px;"data-ga-action="product description 1_Select" data-ga-label="View" data-ga-value="1" >
+                <div class="caption-panel__links">
+                    <a id="product1" style="margin-right:40px;"data-ga-action="product description 1_Select" data-ga-label="View" data-ga-value="1" >
 										   <span>
 										       View
 											   <svg viewBox="-2 -2 30 30" class="svg-icon link-icon link-icon-project-color">
@@ -155,11 +147,11 @@
 
 								                </svg>
 										   </span>
-                            </a>
+                    </a>
 
-                            <a style="float: right; margin-left:15px;" id="product4" data-ga-action="product description 1_Select" data-ga-label="Add to Cart" data-ga-value="1" >
+                    <a style="float: right; margin-left:15px;" id="product4" data-ga-action="product description 1_Select" data-ga-label="Add to Cart" data-ga-value="1" >
 										   <span>
-										       Add to cart
+										       Update order status
 											   <svg viewBox="-2 -2 30 30" class="svg-icon link-icon link-icon-project-color">
 								                   <path d="M20.5,3.5c-4.7-4.7-12.3-4.7-17,0s-4.7,12.3,0,17s12.3,4.7,17,0S25.2,8.2,20.5,3.5z M10.4,18.9l5.6-5.6H4.2v-2.7l11.9,0l-5.6-5.6l1.8-1.8l7.9,7.9l0.8,0.8l-1.3,1.3l-7.4,7.4L10.4,18.9z">
 
@@ -168,16 +160,30 @@
 
 								                </svg>
 										   </span>
-                            </a>
-
-
-                        </div>
-
-                    </div>
+                    </a>
 
 
                 </div>
+
             </div>
+
+
+        </div>
+    </div>
+
+
+</script>
+
+<!-- Products Body -->
+
+<div class="page-row page-row--split-blocks page-row-project">
+
+
+    <!-- Product cards -->
+    <div class="content-container content-row content-row--short">
+
+        <div class="grid" id="content">
+
 
 
 
@@ -189,6 +195,34 @@
 
 
 </div>
+
+
+<footer class="hashcode-footer mdl-mini-footer">
+    <div class="mdl-mini-footer__left-section">
+        <p class="mdl-typography--font-light">
+
+            © 2017 Lakeshore Market
+
+            <a href="index.html">
+                Go to Homepage
+            </a>
+
+            <a href="login.html">
+                Sign in
+            </a>
+
+            <a href="index.html">
+                Sign up for an account
+            </a>
+
+            <a href="#">
+                About Lakeshore Market
+            </a>
+
+        </p>
+    </div>
+
+</footer>
 
 </body>
 </html>

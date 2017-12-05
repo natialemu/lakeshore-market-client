@@ -12,6 +12,7 @@
     <link href="styles/bootstrap.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <!-- JQuery-->
+    <script src="scripts/sign-up-js.js"></script>
 
 
 
@@ -63,7 +64,7 @@
 
                            <li><a href = "#">Sign up</a></li>
 
-                           <li style="margin-left:30px;"><a href = "#">Log in</a></li>
+                           <li style="margin-left:30px;"><a href = "login.html">Log in</a></li>
                        </ul>
                    </div><!-- / un-colllapsed navbar  -->
 
@@ -81,14 +82,7 @@
                            Lakeshore market
                        </h1>
                        <p class="alt-lead mb-4">
-                           description goes here
-                           description goes here
-                           description goes heredescription goes here
-                           description goes heredescription goes here
-                           description goes here
-                           description goes heredescription goes here
-                           description goes heredescription goes here
-                           description goes here
+                           Welcome to Lakeshore market
 
 
                        </p>
@@ -99,7 +93,7 @@
                    <div class="mx-auto col-sm-8 col-md-5 hide-sm">
 
                        <div class="rounded-1 text-gray bg-gray-light py-4 px-4 px-md3 px-lg-4">
-                           <form accept-charset="UTF-8" action="/join" autocomplete="off" class="home-hero-signup js-signup-form" method="post">
+                           <form id="registeration_form" accept-charset="UTF-8" action="" autocomplete="off" class="home-hero-signup js-signup-form" method="">
                                <div style="margin:0;padding: 0;display: inline"></div>
                                <dl class="form-group mt-0">
                                    <dt class="input-label">
@@ -108,7 +102,7 @@
 
                                    </dt>
                                    <dd>
-                                       <input type="text" name="user[login]" id="user[login]" class="form-control form-control-lg input-block" placeholder="Pick a username">
+                                       <input type="text" name="username" id="user[login]" class="form-control form-control-lg input-block" placeholder="Pick a username">
 
                                    </dd>
 
@@ -120,7 +114,7 @@
 
                                    </dt>
                                    <dd>
-                                       <input type="text" name="user[email]" id="user[email]" class="form-control form-control-lg input-block" placeholder="example@example.com">
+                                       <input type="text" name="email" id="user[email]" class="form-control form-control-lg input-block" placeholder="example@example.com">
 
                                    </dd>
 
@@ -134,7 +128,21 @@
 
                                    </dt>
                                    <dd>
-                                       <input type="text" name="user[email]" id="user[password]" class="form-control form-control-lg input-block" placeholder="Create a password">
+                                       <input type="text" name="password" id="user[password]" class="form-control form-control-lg input-block" placeholder="Create a password">
+
+                                   </dd>
+
+                               </dl>
+
+                               <dl class="form-group ">
+
+                                   <dt class="input-label">
+                                       <label class="form-label-f5" for="user[user_type]">User type</label>
+
+
+                                   </dt>
+                                   <dd>
+                                       <input type="text" name="user_type" id="user[user_type]" class="form-control form-control-lg input-block" placeholder="Partner or customer">
 
                                    </dd>
 
@@ -144,20 +152,10 @@
                                <input id="required_field_811a" name="required_field" style="display: none" type="text" class="form-control">
                                <input  name="timestamp" style="display: none" type="hidden" value="1511122354537273636" class="form-control">
 
-                               <div class="dropdown dropdown-custom">
-                                   <button class="btn btn-primary " type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                       Select user
-                                       <span class="caret"></span>
-                                   </button>
-                                   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                       <li><a href="#">Customer</a></li>
-                                       <li role="separator" class="divider"></li>
-                                       <li><a href="#">Partner</a></li>
 
-                                   </ul>
-                               </div>
 
-                               <button class="btn btn-primary btn-large f4 btn-block" type="submit">Sign up</button>
+
+                               <button id="register_button"class="btn btn-primary btn-large f4 btn-block" type="submit">Sign up</button>
 
                            </form>
                        </div>
@@ -181,8 +179,90 @@
    <div>
 
        <h2 class="section__header" style="position:absolute;left:40%;" >
-           Products
+           Product highlights
        </h2>
+
+       <script id="project-modal-template" type="text/x-handlebars-template">
+           <div class="grid__item project__item desk--one--quarter tablet--one-half">
+               <div class="caption-panel caption-panel--home">
+                   <a class="caption-panel__image-wrapper" data-ga-action="project description 1_Select" data-ga-label="eccomerce, lakeshroe-market" data-ga-value="1">
+                       <div class="caption-panel__image" style="background-color: #a3a3c2">
+
+                       </div>
+                   </a>
+
+                   <div class="caption-panel__content">
+                       <a data-ga-action="product description 1_Select" data-ga-label="eccomerce, lakeshroe-market" data-ga-value="1">
+                           <h3 class="image-aside__title">
+
+                               {{ProductTitle}}
+
+                           </h3>
+
+                       </a>
+
+                       <p class="caption-panel__text">
+                           {{ProductType}}
+
+                       </p>
+
+                       <div class="" style="margin-bottom:20px;">
+                           <a id="product2" style="margin-right:45px;"data-ga-action="product description 1_Select" data-ga-label="View" data-ga-value="1" >
+										   <span>
+										       4 Stars
+
+										   </span>
+                           </a>
+
+                           <a style="float: right; margin-left:20px;margin-right:10px;text-align:center;" id="product3" data-ga-action="product description 1_Select" data-ga-label="Add to Cart" data-ga-value="1" >
+										   <span>
+										       {{ProductCost}}
+
+										   </span>
+                           </a>
+
+
+                       </div>
+
+
+                       <div class="caption-panel__links">
+                           <a id="product1" style="margin-right:40px;"data-ga-action="product description 1_Select" data-ga-label="View" data-ga-value="1" >
+										   <span>
+										       View
+											   <svg viewBox="-2 -2 30 30" class="svg-icon link-icon link-icon-project-color">
+								                   <path d="M20.5,3.5c-4.7-4.7-12.3-4.7-17,0s-4.7,12.3,0,17s12.3,4.7,17,0S25.2,8.2,20.5,3.5z M10.4,18.9l5.6-5.6H4.2v-2.7l11.9,0l-5.6-5.6l1.8-1.8l7.9,7.9l0.8,0.8l-1.3,1.3l-7.4,7.4L10.4,18.9z">
+
+									               </path>
+
+
+								                </svg>
+										   </span>
+                           </a>
+
+                           <a style="float: right; margin-left:15px;" id="product4" data-ga-action="product description 1_Select" data-ga-label="Add to Cart" data-ga-value="1" >
+										   <span>
+										       Add to cart
+											   <svg viewBox="-2 -2 30 30" class="svg-icon link-icon link-icon-project-color">
+								                   <path d="M20.5,3.5c-4.7-4.7-12.3-4.7-17,0s-4.7,12.3,0,17s12.3,4.7,17,0S25.2,8.2,20.5,3.5z M10.4,18.9l5.6-5.6H4.2v-2.7l11.9,0l-5.6-5.6l1.8-1.8l7.9,7.9l0.8,0.8l-1.3,1.3l-7.4,7.4L10.4,18.9z">
+
+									               </path>
+
+
+								                </svg>
+										   </span>
+                           </a>
+
+
+                       </div>
+
+                   </div>
+
+
+               </div>
+           </div>
+
+
+       </script>
 
        <div class="page-row page-row--split-blocks page-row-project">
 
@@ -213,15 +293,15 @@
                    Go to Homepage
                </a>
 
-               <a href="projects.html">
+               <a href="login.html">
                    Sign in
                </a>
 
-               <a href="blog.html">
+               <a href="#">
                    Sign up for an account
                </a>
 
-               <a href="https://www.linkedin.com/in/nathnael-alemu-1b78bb107/">
+               <a href="#">
                    About Lakeshore Market
                </a>
 
