@@ -10,8 +10,10 @@
 
 
 
-    <script src="../scripts/buyer/hompage-script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <!-- JQuery-->
+
+    <script src="../scripts/buyer/hompage-script.js"></script>
+
 
 
 
@@ -22,8 +24,7 @@
 
         <script src="../scripts/handlebars-v4.0.5.js"></script>	<!-- handlebar library -->
     <script src="../scripts/bootstrap.min.js"></script> <!-- bootsrap libraries -->
-    <script src="../scripts/jquery.lettering.js"></script>	<!-- lettering library -->
-    <script src="../scripts/jquery.textillate.js"></script>	<!-- textillate library -->
+
     <title>Home</title>
 </head>
 <body style="padding-top:0;" class="disabled-focus">
@@ -57,7 +58,7 @@
             <!-- start un-colllapsed navbar  -->
             <div class="collapse navbar-collapse mynavigation navbar-right" id="main_navbar">
                 <ul class="nav navbar-nav">
-                    <li class="welcome" ><h4 style="color: #ffffff">Welcome </h4></li>
+                    <li class="welcome" ><h4 id="welcome_text"style="color: #ffffff">Welcome </h4></li>
                     <li class="active" style="margin-left: 20px;"><a href = "#">Home</a></li>
                     <li><a href = "shopping-cart.html">Shopping cart</a></li>
                     <li><a href = "../settings.html">Account</a></li>
@@ -81,13 +82,15 @@
 
 		<div class="content-controls-home">
 			<div class="page-header__job-search__container">
-				<form id="job-search-form" method="get" action="#" autocomplete="off" role="search">
+				<form id="job-search-form" method="get" action="" autocomplete="off" role="search">
 
 					<input id="product_query" type="search" name="j" class="page-header__job-search__input" placeholder="Search products" aria-label="Search jobs">
 					<input type="hidden" name="products_url" value="#">
 
-					<button id="job_search_button" class="page-header__job-search__icon" aria-label="Search jobs" disabled="true">
-						<svg fill="#606060" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+					<button id="job_search_button" class="page-header__job-search__icon" aria-label="Search jobs">
+
+
+                        <svg fill="#606060" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 							<path class="magnifying-glass-path" d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
 							</path>
 
@@ -109,7 +112,7 @@
 		
 	<div class="page-row--split-blocks android-section" style="margin-bottom:40px; position:relative; left:31%;">
 
-		  <h2 class="content-subtitle">
+		  <h2  id="home_body_title" class="content-subtitle">
 		       Most recent products
 		   </h2>
 
@@ -231,11 +234,11 @@
 
                 © 2017 Lakeshore Market
 
-                <a href="index.html">
+                <a href="../index.html">
                     Go to Homepage
                 </a>
 
-                <a href="login.html">
+                <a href="../login.html">
                     Sign in
                 </a>
 

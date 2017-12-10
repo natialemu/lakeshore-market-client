@@ -60,11 +60,10 @@
             <!-- start un-colllapsed navbar  -->
             <div class="collapse navbar-collapse mynavigation navbar-right" id="main_navbar">
                 <ul class="nav navbar-nav">
-                    <li class="welcome" ><h4 style="color: #ffffff">Welcome seller</h4></li>
-                    <li class="active" style="margin-left: 20px;"><a href = "#">Home</a></li>
-                    <li><a href = "#">Account</a></li>
-                    <li><a href = "#">Orders</a></li>
-                    <li><a href = "#">Inventory</a></li>
+                    <li class="welcome" ><h4 style="color: #ffffff">Welcome </h4></li>
+                    <li  style="margin-left: 20px;"><a href = "#">Home</a></li>
+                    <li><a href = "#">Shopping cart</a></li>
+                    <li class="active"><a href = "#">Account</a></li>
                     <li><a href = "#">Transactions</a></li>
                     <li><a href = "#">Log out</a></li>
                 </ul>
@@ -133,74 +132,11 @@
 
 
                 <div class="col-sm-9 overlapping_container ">
-                    <div class="content ">
-
-
-
-                        <div class="page-header">
-                            <h1>Account overview</h1>
-                        </div>
-
-
-                        <div class="row">
-                            <div class="col-md-6">
-                              <div class="well card">
-                                  <h3 class="text-primary">Some form will go here</h3>
-                              </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="well card">
-                                    <h3 class="text-primary">Some other form will go here</h3>
-                                </div>                            </div>
-
-                        </div>
-
-                        <div class="well card">
-                            <h3 class="text-primary">Card 3</h3>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    Username information
-                                </div>
-                                <div class="col-md-6">
-                                    Username information
-                                </div>
-
-                            </div>
-
-                        </div>
 
 
 
 
 
-
-
-
-
-
-                        <script>
-
-                           /* $(function() {
-                                var $modal = $('#one-click-resubscription-confirm-modal');
-                                var $modalConfirm = $modal.find('.btn-modal-agree');
-                                var $modalClose = $modal.find('.btn-modal-cancel');
-                                var $resubscribeCta = $('.opt-back-cta');
-
-                                $resubscribeCta.click(function(event) {
-                                    event.preventDefault();
-                                    $modal.modal('show');
-                                });
-
-                                $modalConfirm.click(function(event) {
-                                    $modalClose.hide();
-                                    $modalConfirm.prop('disabled', true).text('RENEWING...');
-                                    window.location.href = '/us/account/subscription/ocr/?_csrf=f21IZABpuZkeQf21TQFZN_xvU5m2FueN3s8qwrDRoHQ';
-                                });
-                            });*/
-
-                        </script>
-
-                    </div>
                 </div>
 
 
@@ -211,6 +147,410 @@
 
     </div>
 </div>
+
+
+
+<!-- the account summary div -->
+<div id= "account_summary" class="content" style="display: none;">
+
+
+
+    <div class="page-header">
+        <h1>Account overview</h1>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="well card profile">
+                <h3 class="text-primary">Profile</h3>
+                <form role="form">
+                    <div class="form-group">
+                        <label class="control-label">Full name</label>
+                        <p class="form-control-static" id="card-profile-fullName">nathnael2</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label">Username</label>
+                        <p class="form-control-static" id="card-profile-username">nathnael2</p>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Email</label>
+                        <p class="form-control-static" id="card-profile-email">nathnael.alemu@yahoo.com</p>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Date of birth</label>
+                        <p class="form-control-static" id="card-profile-dob">1/4/95</p>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Country</label>
+                        <p class="form-control-static" id="card-profile-country">US</p>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Postal code</label>
+                        <p class="form-control-static" id="card-profile-postalcode">60626</p>
+                    </div>
+                </form>
+
+                <a href="#" class="btn btn-black btn-sm btn-block center-block" id="btn-edit-profile">
+                    Edit profile
+                </a>
+            </div>
+        </div>
+
+
+        <div class="col-md-6">
+            <div class="well card profile">
+                <h3 class="text-primary">Payment card profile</h3>
+                <form role="form">
+                    <div class="form-group">
+                        <label class="control-label">Full name</label>
+                        <p class="form-control-static" id="card-profile-cardNumber">nathnael2</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label">Username</label>
+                        <p class="form-control-static" id="card-profile-securityCode">nathnael2</p>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Email</label>
+                        <p class="form-control-static" id="card-profile-expirationDate">nathnael.alemu@yahoo.com</p>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Date of birth</label>
+                        <p class="form-control-static" id="card-profile-noc">1/4/95</p>
+                    </div>
+
+                </form>
+
+                <a href="#" class="btn btn-black btn-sm btn-block center-block" id="btn-edit-profile-payment">
+                    Edit payment profile
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-md-6">
+        <div class="well card profile">
+            <h3 class="text-primary">Bank profile</h3>
+            <form role="form">
+                <div class="form-group">
+                    <label class="control-label">Full name</label>
+                    <p class="form-control-static" id="card-profile-bankName">nathnael2</p>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label">Username</label>
+                    <p class="form-control-static" id="card-profile-acctNum">nathnael2</p>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Email</label>
+                    <p class="form-control-static" id="card-profile-routingNum">nathnael.alemu@yahoo.com</p>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Date of birth</label>
+                    <p class="form-control-static" id="card-profile-acctType">1/4/95</p>
+                </div>
+
+            </form>
+
+            <a href="#" class="btn btn-black btn-sm btn-block center-block" id="btn-edit-profile-bank">
+                Edit bank profile
+            </a>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<!-- the Edit profile div -->
+<div id="edit profile" class="content" style="display: none;">
+
+    <div class="content">
+
+
+
+        <div class="article-account">
+
+            <div class="page-header">
+                <h1>Edit your profile</h1>
+            </div>
+
+
+
+
+
+
+
+            <div class="well">
+
+
+                <form name="profile" method="post" action="" id="profile" role="form" novalidate="novalidate">
+
+
+                    <div class="form-group">
+                        <label class="control-label" for="profile_email">Email</label>
+                        <input type="email" id="profile_email" name="profile[email]" required="" data-rule-remote="/xhr/json/isEmailAvailable.php" class="form-control" data-msg-required="You must specify your email." data-msg-email="The email address you supplied is invalid, please check to ensure it is correct." data-msg-remote="We're sorry, that email is taken." value="nathnael.alemu@yahoo.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="profile_confirmPassword">Confirm password</label>
+                        <input type="password" id="profile_confirmPassword" name="profile[confirmPassword]" disabled="disabled" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="profile_postalCode">Postal code</label>
+                        <input type="text" id="profile_postalCode" name="profile[postalCode]" required="" maxlength="10" class="form-control" value="60626">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="profile_gender">Gender</label>
+                        <select id="profile_gender" name="profile[gender]" required="" class="form-control">
+                            <option value="male" selected="selected">Male</option>
+                            <option value="female">Female</option>
+                            <option value="neutral">Non-binary</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Date of birth</label>
+                        <div id="profile_birthdate" class="bootstrap-date row">
+                            <div class="col-xs-4">
+                                <select id="profile_birthdate_month" name="profile[birthdate][month]" required="" class="form-control">
+                                    <option value="1" selected="selected">01</option>
+                                    <option value="2">02</option><option value="3">03</option>
+                                    <option value="4">04</option><option value="5">05</option>
+                                    <option value="6">06</option><option value="7">07</option>
+                                    <option value="8">08</option><option value="9">09</option>
+                                    <option value="10">10</option><option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-4">
+                                <select id="profile_birthdate_day" name="profile[birthdate][day]" required="" class="form-control">
+                                    <option value="1">01</option>
+                                    <option value="2">02</option>
+                                    <option value="3">03</option>
+                                    <option value="4" selected="selected">04</option>
+                                    <option value="5">05</option>
+                                    <option value="6">06</option>
+                                    <option value="7">07</option>
+                                    <option value="8">08</option>
+                                    <option value="9">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="1900">1900</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="profile_country">Country</label>
+                        <select id="profile_country" name="profile[country]" disabled="disabled" required="" class="form-control">
+                            <option value="US" selected="selected">USA</option>
+                        </select>
+                        <span class="help-block">Read more about
+                            <a href="https://support.spotify.com/learn-more/faq/#!/article/How-can-I-change-my-country-setting">changing your country.</a>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <div id="profile_mobile">
+                            <div class="form-group">
+                                <label class="control-label" for="profile_mobile_number">Mobile phone number
+                                </label>
+                                <input type="text" id="profile_mobile_number" name="profile[mobile][number]" class="form-control" value="4439624857">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="profile_mobile_brand">Mobile phone</label>
+                                <select id="profile_mobile_brand" name="profile[mobile][brand]" class="form-control valid">
+                                    <option value="">Please Select</option>
+                                    <option value="Android">Android</option>
+                                    <option value="Clearwire">Clearwire</option>
+                                    <option value="U.S. Cellular">U.S. Cellular</option>
+                                    <option value="Cricket">Cricket</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div id="profile_send">
+                            <div class="form-group">
+                                <div class="checkbox">
+                                    <label for="profile_send_third_party_email">
+                                        <input type="checkbox" id="profile_send_third_party_email" name="profile[send][third_party_email]" value="1">
+                        Share my registration data with Spotify's content providers for marketing purposes.<span class="control-indicator"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row-buttons-bordered">
+                        <button type="submit" id="profile_save_profile" name="profile[save_profile]" class="btn-sm js-gtm-event btn btn-primary" data-ga-category="Account Pages" data-ga-action="save profile" data-ga-label="save-profile-account" data-gtm-event-name="save_profile_button_clicked">Save profile</button>
+                        <a id="profile_cancel" name="profile[cancel]" class="btn btn-sm btn-cancel" href="/us/account/overview/">Cancel</a>
+                    </div>
+                    <input type="hidden" id="profile__token" name="profile[_token]" class="form-control" value="rlWLKMxtTYNCs9StXwnKBj11O9VFvj_Y_vrb4SGlY1A">
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<!-- the Edit Payment card div -->
+<div id="edit profile_card" class="content" style="display:none;">
+
+    <div class="content">
+
+
+
+        <div class="article-account">
+
+            <div class="page-header">
+                <h1>Edit your payment card profile</h1>
+            </div>
+
+
+
+
+
+
+
+            <div class="well">
+
+
+                <form name="profile" method="post" action="" id="profile_card" role="form" novalidate="novalidate">
+
+
+                    <div class="form-group">
+                        <label class="control-label" for="profile_NameOnCard">Email</label>
+                        <input type="text" id="profile_NameOnCard" name="profile[name_on_card]" required="" data-rule-remote="/xhr/json/isEmailAvailable.php" class="form-control" data-msg-required="You must specify your email." data-msg-email="The email address you supplied is invalid, please check to ensure it is correct." data-msg-remote="We're sorry, that email is taken." value="nathnael.alemu@yahoo.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="profile_card_number">Confirm password</label>
+                        <input type="text" id="profile_card_number" name="profile[card_number]" disabled="disabled" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="profile_expirationDate">ExpirationDate</label>
+                        <input type="text" id="profile_expirationDate" name="profile[expirationDate]" required="" maxlength="10" class="form-control" value="mm/dd/yyyy">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="profile_security_code">Security code</label>
+                        <input type="password" id="profile_security_code" name="profile[expirationDate]" required="" maxlength="10" class="form-control" value="60626">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="profile_bStreetAddress">Billing street address</label>
+                        <input type="password" id="profile_bStreetAddress" name="profile[expirationDate]" required="" maxlength="10" class="form-control" value="60626">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="profile_bcity">Billing city</label>
+                        <input type="password" id="profile_bcity" name="profile[expirationDate]" required="" maxlength="10" class="form-control" value="60626">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="profile_bstate">Billing state</label>
+                        <input type="password" id="profile_bstate" name="profile[expirationDate]" required="" maxlength="10" class="form-control" value="60626">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="profile_bzipcode">Billing zipcode</label>
+                        <input type="password" id="profile_bzipcode" name="profile[expirationDate]" required="" maxlength="10" class="form-control" value="60626">
+                    </div>
+
+
+
+
+
+                    <div class="row-buttons-bordered">
+                        <button type="submit" id="profile_card_save_profile" name="profile[save_profile]" class="btn-sm js-gtm-event btn btn-primary" data-ga-category="Account Pages" data-ga-action="save profile" data-ga-label="save-profile-account" data-gtm-event-name="save_profile_button_clicked">Save profile</button>
+                        <a id="profile_card_cancel" name="profile[cancel]" class="btn btn-sm btn-cancel" href="/us/account/overview/">Cancel</a>
+                    </div>
+                    <input type="hidden" id="profile_card__token" name="profile[_token]" class="form-control" value="rlWLKMxtTYNCs9StXwnKBj11O9VFvj_Y_vrb4SGlY1A">
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- the Edit Bank info div -->
+<div id="edit profile_bank" class="content" style="display:none;">
+
+    <div class="content">
+
+
+
+        <div class="article-account">
+
+            <div class="page-header">
+                <h1>Edit your bank profile</h1>
+            </div>
+
+
+
+
+
+
+
+            <div class="well">
+
+
+                <form name="profile" method="post" action="" id="profile_bank" role="form" novalidate="novalidate">
+
+
+                    <div class="form-group">
+                        <label class="control-label" for="profile_bankName">Email</label>
+                        <input type="text" id="profile_bankName" name="profile[name_on_card]" required="" data-rule-remote="/xhr/json/isEmailAvailable.php" class="form-control" data-msg-required="You must specify your email." data-msg-email="The email address you supplied is invalid, please check to ensure it is correct." data-msg-remote="We're sorry, that email is taken." value="nathnael.alemu@yahoo.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="profile_acct_number">Confirm password</label>
+                        <input type="text" id="profile_acct_number" name="profile[card_number]" disabled="disabled" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="profile_acct_type">ExpirationDate</label>
+                        <input type="text" id="profile_acct_type" name="profile[expirationDate]" required="" maxlength="10" class="form-control" value="mm/dd/yyyy">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="profile_routingNumber">Security code</label>
+                        <input type="password" id="profile_routingNumber" name="profile[expirationDate]" required="" maxlength="10" class="form-control" value="60626">
+                    </div>
+
+
+
+
+
+                    <div class="row-buttons-bordered">
+                        <button type="submit" id="profile_bank_save_profile" name="profile[save_profile]" class="btn-sm js-gtm-event btn btn-primary" data-ga-category="Account Pages" data-ga-action="save profile" data-ga-label="save-profile-account" data-gtm-event-name="save_profile_button_clicked">Save profile</button>
+                        <a id="profile_bank_cancel" name="profile[cancel]" class="btn btn-sm btn-cancel" href="/us/account/overview/">Cancel</a>
+                    </div>
+                    <input type="hidden" id="profile_bank__token" name="profile[_token]" class="form-control" value="rlWLKMxtTYNCs9StXwnKBj11O9VFvj_Y_vrb4SGlY1A">
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
 
 
 </body>

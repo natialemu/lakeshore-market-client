@@ -1,4 +1,46 @@
-$(function () {
+$(document).ready(function () {
+
+    var source = $("#project-modal-template").html();
+    var project_modal_template = Handlebars.compile(source);
+
+    var productData1 = {
+        ProductTitle:"Harry potter",
+        ProductCost: "33",
+        ProductType: "something"
+
+    };
+    var html1 = project_modal_template(productData1);
+
+   // $("#content").append(html1);
+
+    $.getJSON('http://localhost:8081/products/', function (product) {
+        //console.log(product);
+
+
+        for (var i = 0; i < product.length; i++) {
+
+            if(i < 3){
+                var productData = {
+                    ProductTitle: ""+product[i].productName,
+                    ProductCost: ""+product[i].productCost,
+                    ProductType: ""+product[i].productType
+
+                };
+
+                var html = project_modal_template(productData);
+
+                $("#content").append(html);
+            }
+        }
+       // productsToDisplay = product;
+
+    });
+
+
+
+
+
+
 
     var registrationLink = "http://localhost:8081/account/";
     //var sampleProducts = getProducts();
@@ -14,18 +56,23 @@ $(function () {
         };
         console.log(formData);
 
+        // $.post("http://localhost:8081/account/", function(data, status){
+        //     //alert("Data: " + data + "\nStatus: " + status);
+        //     console.log(status);
+        // });
+
         $.ajax({
             method: 'POST',
             headers: {
-                         'Accept': 'application/json',
-                         'Content-Type': 'application/json'
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
             },
             url: 'http://localhost:8081/account/',
-            data: formData,
+            data: JSON.stringify(formData),
             dataType: 'json',
             encode: true
             }).done(function(data){
-                console.log(data);
+                window.location.href="login.html";
         });
         event.preventDefault();
 
@@ -128,18 +175,10 @@ $(function () {
     }
 
     function getProducts(){
-        var productsToDisplay = [];
+        var productsToDisplay;
 
 
-        $.getJSON('http://localhost:8081/products/', function (product) {
 
-            for (var i = 0; i < product.link.length; i++) {
-                if(i < 3){
-                    productsToDisplay.push(product[i]);
-                }
-            }
-
-        });
 
         return productsToDisplay;
 

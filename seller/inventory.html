@@ -12,6 +12,7 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <!-- JQuery-->
+    <script src="../scripts/seller/inventory-script.js"></script>
 
 
 
@@ -62,13 +63,10 @@
             <div class="collapse navbar-collapse mynavigation navbar-right" id="main_navbar">
                 <ul class="nav navbar-nav">
                     <li> <h4 style="text-align: center; vertical-align: center; font-weight:400; color:#ffffff">Welcome, User</h4></li>
-                    <li class="active" style="margin-left: 100px;"><a href = "#">Home</a></li>
-                    <li><a href = "#">Add a product</a></li>
-                    <li><a href = "#">Account</a></li>
-                    <li><a href = "#">Orders</a></li>
-                    <li><a href = "#">Inventory</a></li>
-                    <li><a href = "#">Transactions</a></li>
-                    <li><a href = "#">Log out</a></li>
+                    <li style="margin-left: 100px;"><a href = "#">Home</a></li>
+                    <li><a href = "products.html">Add a product</a></li>
+                    <li class="active" ><a href = "#">Inventory</a></li>
+                    <li><a href = "../index.html">Log out</a></li>
                 </ul>
             </div><!-- / un-colllapsed navbar  -->
 
@@ -88,59 +86,51 @@
 </div>
 
 
-<!-- Products Body -->
+<script id="project-modal-template" type="text/x-handlebars-template">
+    <div class="grid__item project__item desk--one--quarter tablet--one-half">
+        <div class="caption-panel caption-panel--home">
+            <a class="caption-panel__image-wrapper" data-ga-action="project description 1_Select" data-ga-label="eccomerce, lakeshroe-market" data-ga-value="1">
+                <div class="caption-panel__image" style="background-color: #a3a3c2">
 
-<div class="page-row page-row--split-blocks page-row-project">
+                </div>
+            </a>
 
+            <div class="caption-panel__content">
+                <a data-ga-action="product description 1_Select" data-ga-label="eccomerce, lakeshroe-market" data-ga-value="1">
+                    <h3 class="image-aside__title">
 
-    <!-- Product cards -->
-    <div class="content-container content-row content-row--short">
+                        {{ProductTitle}}
 
-        <div class="grid" id="content">
-            <div class="grid__item project__item desk--one--quarter tablet--one-half">
-                <div class="caption-panel caption-panel--home">
-                    <a class="caption-panel__image-wrapper" data-ga-action="project description 1_Select" data-ga-label="eccomerce, lakeshroe-market" data-ga-value="1">
-                        <div class="caption-panel__image" style="background-color: #a3a3c2">
+                    </h3>
 
-                        </div>
+                </a>
+
+                <p class="caption-panel__text">
+                    {{ProductType}}
+
+                </p>
+
+                <div class="" style="margin-bottom:20px;">
+                    <a id="product2" style="margin-right:45px;"data-ga-action="product description 1_Select" data-ga-label="View" data-ga-value="1" >
+										   <span>
+										       4 Stars
+
+										   </span>
                     </a>
 
-                    <div class="caption-panel__content">
-                        <a data-ga-action="product description 1_Select" data-ga-label="eccomerce, lakeshroe-market" data-ga-value="1">
-                            <h3 class="image-aside__title">
-
-                                Harry Potter
-
-                            </h3>
-
-                        </a>
-
-                        <p class="caption-panel__text">
-                            Book
-
-                        </p>
-
-                        <div class="" style="margin-bottom:20px;">
-                            <a id="product2" style="margin-right:45px;"data-ga-action="product description 1_Select" data-ga-label="View" data-ga-value="1" >
+                    <a style="float: right; margin-left:20px;margin-right:10px;text-align:center;" id="product3" data-ga-action="product description 1_Select" data-ga-label="Add to Cart" data-ga-value="1" >
 										   <span>
-										       Star ratings
+										       {{ProductCost}}
 
 										   </span>
-                            </a>
-
-                            <a style="float: right; margin-left:20px;margin-right:10px;text-align:center;" id="product3" data-ga-action="product description 1_Select" data-ga-label="Add to Cart" data-ga-value="1" >
-										   <span>
-										       $0.00
-
-										   </span>
-                            </a>
+                    </a>
 
 
-                        </div>
+                </div>
 
 
-                        <div class="caption-panel__links">
-                            <a id="product1" style="margin-right:40px;"data-ga-action="product description 1_Select" data-ga-label="View" data-ga-value="1" >
+                <div class="caption-panel__links">
+                    <a id="product1" style="margin-right:40px;"data-ga-action="product description 1_Select" data-ga-label="View" data-ga-value="1" >
 										   <span>
 										       View
 											   <svg viewBox="-2 -2 30 30" class="svg-icon link-icon link-icon-project-color">
@@ -151,9 +141,9 @@
 
 								                </svg>
 										   </span>
-                            </a>
+                    </a>
 
-                            <a style="float: right; margin-left:15px;" id="product4" data-ga-action="product description 1_Select" data-ga-label="Add to Cart" data-ga-value="1" >
+                    <a style="float: right; margin-left:15px;" id="product4" data-ga-action="product description 1_Select" data-ga-label="Add to Cart" data-ga-value="1" >
 										   <span>
 										       Add to cart
 											   <svg viewBox="-2 -2 30 30" class="svg-icon link-icon link-icon-project-color">
@@ -164,16 +154,31 @@
 
 								                </svg>
 										   </span>
-                            </a>
-
-
-                        </div>
-
-                    </div>
+                    </a>
 
 
                 </div>
+
             </div>
+
+
+        </div>
+    </div>
+
+
+</script>
+
+
+<!-- Products Body -->
+
+<div class="page-row page-row--split-blocks page-row-project">
+
+
+    <!-- Product cards -->
+    <div class="content-container content-row content-row--short">
+
+        <div class="grid" id="content">
+
 
 
 

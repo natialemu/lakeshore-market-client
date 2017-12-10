@@ -1,25 +1,236 @@
-.checkout_container{
+/*.checkout_container{*/
+    /*width: 60%;*/
+    /*height: 80%;*/
+/*}*/
+/*.checkout_detail{*/
+    /*background-color: #B0B0B0;*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
+    /*border-radius: 2px;*/
+    /*box-shadow: 0 2px 4px rgba(0,0,0,0.15);*/
+    /*color: #fff;*/
+    /*display: block;*/
+    /*overflow: hidden;*/
+    /*position: relative;*/
+    /*transition: background-color .2s cubic-bezier(0.4, 0, 0.2, 1),box-shadow .3s cubic-bezier(0.4, 0, 0.2, 1),color .2s cubic-bezier(0.4, 0, 0.2, 1),fill .2s cubic-bezier(0.4, 0, 0.2, 1);*/
+/*}*/
+
+/*.checkout_detail_size {*/
+    /*position: relative;*/
+    /*margin-left: 0%;*/
+    /*height: 600px;*/
+    /*width: 100%;*/
+    /*margin-bottom: 50px;*/
+/*}*/
+/*.checkout_stats {*/
+    /*width: 40%;*/
+    /*height: 40%;*/
+    /*padding-right:20px !important;*/
+/*}*/
+/*.checkout_stats_size {*/
+    /*position: relative;*/
+    /*margin-left: 0;*/
+    /*height: 300px;*/
+    /*width: 100%;*/
+    /*margin-bottom: 30px;*/
+/*}*/
+/*.well {*/
+    /*margin-bottom: 10px;*/
+    /*padding-top: 30px;*/
+    /*padding-bottom: 30px;*/
+/*}*/
+/*.well, .well-lg, .well-sm {*/
+    /*border-radius: 0;*/
+/*}*/
+/*.well {*/
+    /*box-shadow: none;*/
+/*}*/
+/*.well {*/
+    /*min-height: 20px;*/
+    /*padding: 19px;*/
+    /*margin-bottom: 20px;*/
+    /*background-color: #fff;*/
+    /*border: 1px solid transparent;*/
+    /*border-radius: 4px;*/
+    /*-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);*/
+    /*box-shadow: inset 0 1px 1px rgba(0,0,0,.05);*/
+/*}*/
+/*.form-notifications {*/
+    /*margin-left: -8px;*/
+    /*margin-right: -8px;*/
+/*}*/
+#sc-buy-box {
+    position: relative;
+}
+.a-section {
+    margin-bottom: 22px;
+}
+form {
+    margin-bottom: 14px;
+}
+#sc-buy-box .sc-spinner {
+    margin-top: 100px;
+    position: absolute;
+    text-align: center;
     width: 100%;
-    height: 80%;
+    z-index: 1000;
 }
-.checkout_detail{
-    background-color: #B0B0B0;
-    background-position: center;
-    background-size: cover;
-    border-radius: 2px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
-    color: #fff;
+.a-box-group>.a-box.a-onlychild, .a-box-group>.a-box:only-child {
+    border-radius: 4px;
+}
+.a-box-group>.a-box.a-last, .a-box-group>.a-box:last-child {
+    border-radius: 0 0 4px 4px;
+}
+.a-box-group>.a-box.a-first, .a-box-group>.a-box:first-child {
+    border-radius: 4px 4px 0 0;
+    margin-top: 0;
+}
+.a-box-group>.a-box {
+    margin-top: -1px;
+    border-radius: 0;
+}
+.a-color-alternate-background {
+    background-color: #f3f3f3!important;
+}
+.a-box {
     display: block;
+    border-radius: 4px;
+    border: 1px #ddd solid;
+    background-color: #fff;
+}
+.a-box-group>.a-box.a-onlychild>.a-box-inner, .a-box-group>.a-box:only-child>.a-box-inner {
+    border-radius: 4px;
+}
+.a-box-group>.a-box.a-last>.a-box-inner, .a-box-group>.a-box:last-child>.a-box-inner {
+    border-radius: 0 0 4px 4px;
+}
+
+.a-box-group>.a-box.a-first>.a-box-inner, .a-box-group>.a-box:first-child>.a-box-inner {
+    border-radius: 4px 4px 0 0;
+}
+.a-box .a-box-inner {
+    border-radius: 4px;
+    position: relative;
+    padding: 14px 18px;
+}
+.a-spacing-mini, .a-ws .a-ws-spacing-mini {
+    margin-bottom: 6px!important;
+}
+.a-spacing-base, .a-ws .a-ws-spacing-base {
+    margin-bottom: 14px!important;
+}
+.a-button-span12 {
+    width: 48%!important;
+}
+.a-button-primary {
+    background: #f0c14b;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+}
+.a-button {
+    background: #e7e9ec;
+    border-radius: 3px;
+    border-color: #ADB1B8 #A2A6AC #8D9096;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+    text-decoration: none!important;
+    vertical-align: middle;
+    float: right;
+    margin-left: 5px;
+}
+.a-button-primary .a-button-inner {
+    box-shadow: 0 1px 0 rgba(255,255,255,.4) inset;
+}
+.a-button-primary .a-button-inner {
+    background: #f4d078;
+    background: -webkit-linear-gradient(top,#f7dfa5,#f0c14b);
+    background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
+}
+.a-button .a-button-inner {
+    background: #eff1f3;
+    background: -webkit-linear-gradient(top,#f7f8fa,#e7e9ec);
+    background: linear-gradient(to bottom,#f7f8fa,#e7e9ec);
+}
+.a-button-inner {
+    display: block;
+    position: relative;
     overflow: hidden;
+    height: 29px;
+    box-shadow: 0 1px 0 rgba(255,255,255,.6) inset;
+    border-radius: 2px;
+}
+.a-button-input {
+    position: absolute;
+    background-color: transparent;
+    color: transparent;
+    border: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: .01;
+    outline: 0;
+    overflow: visible;
+    z-index: 20;
+}
+input, select, textarea {
+    -webkit-transition: all .1s linear;
+    transition: all .1s linear;
+    line-height: 19px;
+    color: #111;
+}
+.a-button-primary .a-button-text {
+    color: #111;
+}
+.a-button-text {
+    background-color: transparent;
+    border: 0;
+    display: block;
+    font-size: 13px;
+    line-height: 29px;
+    margin: 0;
+    outline: 0;
+    padding: 0 10px 0 11px;
+    text-align: center;
+    white-space: nowrap;
+}
+.a-text-center {
+    text-align: center!important;
+}
+.a-spacing-top-base {
+    margin-top: 14px!important;
+}
+.a-row {
+    width: 100%;
+}
+.a-box .a-divider.a-divider-break, .a-color-base-background .a-divider.a-divider-break, .a-divider.a-divider-break {
+    text-align: center;
     position: relative;
-    transition: background-color .2s cubic-bezier(0.4, 0, 0.2, 1),box-shadow .3s cubic-bezier(0.4, 0, 0.2, 1),color .2s cubic-bezier(0.4, 0, 0.2, 1),fill .2s cubic-bezier(0.4, 0, 0.2, 1);
+    top: 2px;
+    padding-top: 1px;
+    margin-bottom: 14px;
+    line-height: 0;
+}
+.a-fixed-right-flipped-grid .a-col-left {
+    overflow: hidden;
+    zoom: 1;
+    width: auto;
+}
+.a-row:after, .a-row:before {
+    display: table;
+    content: "";
+    line-height: 0;
+    font-size: 0;
+}
+.a-fixed-left-grid .a-fixed-left-grid-inner:after, .a-fixed-left-grid .a-fixed-left-grid-inner:before {
+    display: table;
+    content: "";
+    line-height: 0;
+    font-size: 0;
 }
 
-.checkout_detail_size{
-    position: relative;
-    margin-left: 20%;
-
-    height: 600px;
-    width: 60%;
-    margin-bottom: 50px;
-}

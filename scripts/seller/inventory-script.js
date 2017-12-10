@@ -1,88 +1,50 @@
-$(document).ready(function (){
-    $('form').submit(function (event) {
+$(document).ready(function () {
 
-        var formData = {
-            'email': getEmail(),
-            'password': getPassword(),
-            'isCustomer':getUserType() === "customer"
-        };
-        console.log(formData);
-        var username = getEmail();
+    var username = getCookie('username');
 
-        $.getJSON('http://localhost:8081/account/'+username, function (account) {
-            console.log(acount);
+    var source = $("#project-modal-template").html();
+    var project_modal_template = Handlebars.compile(source);
+
+    var productData1 = {
+        ProductTitle: "Harry potter",
+        ProductCost: "33",
+        ProductType: "something"
+
+    };
+    var html1 = project_modal_template(productData1);
+
+    // $("#content").append(html1);
+
+    $.getJSON('http://localhost:8081/products/inventory/'+username, function (product) {
+        //console.log(product);
 
 
-            // for (var i = 0; i < product.length; i++) {
-            //
-            //     if(i < 3){
-            //         var productData = {
-            //             ProductTitle: ""+product[i].productName,
-            //             ProductCost: ""+product[i].productCost,
-            //             ProductType: ""+product[i].productType
-            //
-            //         };
-            //
-            //         var html = project_modal_template(productData);
-            //
-            //         $("#content").append(html);
-            //     }
-            // }
-            // productsToDisplay = product;
+        for (var i = 0; i < product.length; i++) {
 
-        });
 
-        event.preventDefault();
+                var productData = {
+                    ProductTitle: "" + product[i].productName,
+                    ProductCost: "" + product[i].productCost,
+                    ProductType: "" + product[i].productType
 
+                };
+
+                var html = project_modal_template(productData);
+
+                $("#content").append(html);
+
+        }
+        // productsToDisplay = product;
 
     });
 
-    function getEmail(){
-        return $("input[name=login]").val();
-
-    }
-
-    function getPassword(){
-        return $("input[name=password]").val();
-
-
-    }
-
-    function getUserType(){
-        return $("input[name=user_type]").val();
-
-    }
-
-});
 
 
 
-        //alert("this is something");
-
-
-
-            // $.ajax({
-            //     method: 'PUT',
-            //     headers: {
-            //         'Accept': 'application/json',
-            //         'Content-Type': 'application/json'
-            //     },
-            //     url: 'http://localhost:8081/account/login',
-            //     data: formData,
-            //     dataType: 'json',
-            //     encode: true
-            // }).done(function(data){
-            //     console.log(data);
-            // });
-            // event.preventDefault();
-
-
-
-
-
-
-
-    //     $("#login_form").attr('action','buyer/homepage.html');
+    // $("#register_button").click(function () {
+    //
+    //
+    //
     //     // $.ajax({
     //     //     url: "http://localhost:8081/account/",
     //     //     headers: {
@@ -102,7 +64,7 @@ $(document).ready(function (){
     //     //             //document.cookie = "password="+login_payload["password"]
     //     //             //redirect to the next page
     //     //             //redirect("customer/homepage.html");
-    //     //            // $("#login_field").attr('value','Yassss');
+    //     //             // $("#login_field").attr('value','Yassss');
     //     //
     //     //         }else{
     //     //             //there was a problem loggin in
@@ -145,10 +107,24 @@ $(document).ready(function (){
     //
     // });
 
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i <ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) === ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) === 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
 
 
 
 
 
-
-
+});

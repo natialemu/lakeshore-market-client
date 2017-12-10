@@ -1,50 +1,90 @@
-(function () {
+$(document).ready(function (){
+
+    console.log(document.cookie);
+
+
+
+    var username = getCookie('username');
+    $("#welcome_text").html('Welcome, '+username);
+
 
     var source = $("#project-modal-template").html();
     var project_modal_template = Handlebars.compile(source);
 
-    var product_display = getSomeProducts();
-    for(var i =0; i < product_display.length;i++){
-        var productData = {
-            ProductTitle: ""+product_display[i].productName,
-            ProductCost: ""+product_display[i].productCost,
-            ProductType: ""+product_display[i].productType
 
-        }
+    $.getJSON('http://localhost:8081/products/', function (product) {
+        console.log(product);
 
-        var html = project_modal_template(productData);
+        for (var i = 0; i < product.length; i++) {
 
-        $("#content").append(html);
+                var productData = {
+                    ProductTitle: ""+product[i].productName,
+                    ProductCost: ""+product[i].productCost,
+                    ProductType: ""+product[i].productType
+                };
 
-    }
+                for( j =0; j < product[i].links.length;j++){
+                    $("#project4").attr('href',product[i].links[j]);
+
+            }
+
+
+
+                var html = project_modal_template(productData);
+
+                $("#content").append(html);
+            }
+
+
+    });
 
 
 
 
 
     //attach clicklistener to the search button
-    $("#job_search_button").click(function () {
-        var searchTerm = extractSearchTerm();
-        var searchResults = getProducts(searchTerm);
+    $('form').submit(function (event) {
 
+
+        var searchTerm = extractSearchTerm();
+
+        console.log(searchTerm);
+        $("#home_body_title").html('Search Results')
         $("#content").empty();
-        for(var i =0; i < searchResults.length;i++){
-            var productData = {
-                ProductTitle: ""+searchResults[i].productName,
-                ProductCost: ""+searchResults[i].productCost,
-                ProductType: ""+searchResults[i].productType
+        $.getJSON('http://localhost:8081/products/', function (searchResults) {
+
+            for(var i =0; i < searchResults.length;i++){
+                if(searchResults[i].productName ===searchTerm){
+                    var productData = {
+                        ProductTitle: ""+searchResults[i].productName,
+                        ProductCost: ""+searchResults[i].productCost,
+                        ProductType: ""+searchResults[i].productType
+
+                    };
+
+                    var html = project_modal_template(productData);
+
+                    $("#content").append(html);
+
+                }
+
 
             }
 
-            var html = project_modal_template(productData);
 
-            $("#content").append(html);
+        });
+        event.preventDefault();
 
-        }
+
 
         //change the sign of teh identical thing
 
-    })
+    });
+
+    $("#product4").click(function () {
+        alert("Order proccessed!");
+
+    });
 
     function extractSearchTerm(){
         return $("#product_query").val();
@@ -67,23 +107,24 @@
         return productsToDisplay;
     }
 
-    function getSomeProducts(){
-        var productsToDisplay = [];
-
-
-        $.getJSON('http://localhost:8081/products/', function (product) {
-
-            for (var i = 0; i < product.link.length; i++) {
-                if(i < 3){
-                    productsToDisplay.push(product[i]);
-                }
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i <ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) === ' ') {
+                c = c.substring(1);
             }
-
-        });
-
-        return productsToDisplay;
-
-
+            if (c.indexOf(name) === 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
     }
+
+
+
+
 
 });

@@ -8,6 +8,7 @@
     <link href="styles/market_style.css" rel="stylesheet">
 
     <link href="styles/main-body-style.css" rel="stylesheet">
+    <link href="styles/portfolio.css" rel="stylesheet">
 
     <link href="styles/bootstrap.css" rel="stylesheet">
 
@@ -23,8 +24,7 @@
 
         <script src="scripts/handlebars-v4.0.5.js"></script>	<!-- handlebar library -->
     <script src="scripts/bootstrap.min.js"></script> <!-- bootsrap libraries -->
-    <script src="scripts/jquery.lettering.js"></script>	<!-- lettering library -->
-    <script src="scripts/jquery.textillate.js"></script>	<!-- textillate library -->
+
 
     <title>Lakeshore Martket</title>
 </head>
@@ -175,58 +175,51 @@
 
 
    </div>
+   <script id="project-modal-template" type="text/x-handlebars-template">
+       <div class="grid__item project__item desk--one--quarter tablet--one-half">
+           <div class="caption-panel caption-panel--home">
+               <a class="caption-panel__image-wrapper" data-ga-action="project description 1_Select" data-ga-label="eccomerce, lakeshroe-market" data-ga-value="1">
+                   <div class="caption-panel__image" style="background-color: #a3a3c2">
 
-   <div>
+                   </div>
+               </a>
 
-       <h2 class="section__header" style="position:absolute;left:40%;" >
-           Product highlights
-       </h2>
+               <div class="caption-panel__content">
+                   <a data-ga-action="product description 1_Select" data-ga-label="eccomerce, lakeshroe-market" data-ga-value="1">
+                       <h3 class="image-aside__title">
 
-       <script id="project-modal-template" type="text/x-handlebars-template">
-           <div class="grid__item project__item desk--one--quarter tablet--one-half">
-               <div class="caption-panel caption-panel--home">
-                   <a class="caption-panel__image-wrapper" data-ga-action="project description 1_Select" data-ga-label="eccomerce, lakeshroe-market" data-ga-value="1">
-                       <div class="caption-panel__image" style="background-color: #a3a3c2">
+                           {{ProductTitle}}
 
-                       </div>
+                       </h3>
+
                    </a>
 
-                   <div class="caption-panel__content">
-                       <a data-ga-action="product description 1_Select" data-ga-label="eccomerce, lakeshroe-market" data-ga-value="1">
-                           <h3 class="image-aside__title">
+                   <p class="caption-panel__text">
+                       {{ProductType}}
 
-                               {{ProductTitle}}
+                   </p>
 
-                           </h3>
-
-                       </a>
-
-                       <p class="caption-panel__text">
-                           {{ProductType}}
-
-                       </p>
-
-                       <div class="" style="margin-bottom:20px;">
-                           <a id="product2" style="margin-right:45px;"data-ga-action="product description 1_Select" data-ga-label="View" data-ga-value="1" >
+                   <div class="" style="margin-bottom:20px;">
+                       <a id="product2" style="margin-right:45px;"data-ga-action="product description 1_Select" data-ga-label="View" data-ga-value="1" >
 										   <span>
 										       4 Stars
 
 										   </span>
-                           </a>
+                       </a>
 
-                           <a style="float: right; margin-left:20px;margin-right:10px;text-align:center;" id="product3" data-ga-action="product description 1_Select" data-ga-label="Add to Cart" data-ga-value="1" >
+                       <a style="float: right; margin-left:20px;margin-right:10px;text-align:center;" id="product3" data-ga-action="product description 1_Select" data-ga-label="Add to Cart" data-ga-value="1" >
 										   <span>
 										       {{ProductCost}}
 
 										   </span>
-                           </a>
+                       </a>
 
 
-                       </div>
+                   </div>
 
 
-                       <div class="caption-panel__links">
-                           <a id="product1" style="margin-right:40px;"data-ga-action="product description 1_Select" data-ga-label="View" data-ga-value="1" >
+                   <div class="caption-panel__links">
+                       <a id="product1" style="margin-right:40px;"data-ga-action="product description 1_Select" data-ga-label="View" data-ga-value="1" >
 										   <span>
 										       View
 											   <svg viewBox="-2 -2 30 30" class="svg-icon link-icon link-icon-project-color">
@@ -237,9 +230,9 @@
 
 								                </svg>
 										   </span>
-                           </a>
+                       </a>
 
-                           <a style="float: right; margin-left:15px;" id="product4" data-ga-action="product description 1_Select" data-ga-label="Add to Cart" data-ga-value="1" >
+                       <a style="float: right; margin-left:15px;" id="product4" data-ga-action="product description 1_Select" data-ga-label="Add to Cart" data-ga-value="1" >
 										   <span>
 										       Add to cart
 											   <svg viewBox="-2 -2 30 30" class="svg-icon link-icon link-icon-project-color">
@@ -250,19 +243,30 @@
 
 								                </svg>
 										   </span>
-                           </a>
+                       </a>
 
-
-                       </div>
 
                    </div>
 
-
                </div>
+
+
            </div>
+       </div>
 
 
-       </script>
+   </script>
+
+   <div>
+      <div style="margin-bottom: 30px; min-height: 40px;">
+          <h2 class="section__header" style="position:absolute;left:40%;" >
+              Product highlights
+          </h2>
+
+      </div>
+
+
+
 
        <div class="page-row page-row--split-blocks page-row-project">
 

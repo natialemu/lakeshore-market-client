@@ -5,6 +5,7 @@
     <link href="../styles/homepage-style.css" rel="stylesheet">
     <link href="../styles/portfolio.css" rel="stylesheet">
     <link href="../styles/checkout-style.css" rel="stylesheet">
+    <link href="../styles/settings-style.css" rel="stylesheet">
     <link href="../styles/bootstrap.css" rel="stylesheet">
 
 
@@ -83,10 +84,108 @@
 
 
 
+<div class="row" style="float: left;">
+    <div class="col-sm-9">
+        <div class="content">
 
-<div class="checkout_container grid__item desk--one-half">
 
-    <div class="checkout_detail checkout_detail_size">
+
+            <div class="page-header">
+                <h1>Notification settings</h1>
+            </div>
+            <div id="profile" class="article-account">
+                <div class="well">
+
+
+
+                    <form name="notifications" method="post" class="form-notifications">
+
+                        <table class="table table-striped table-recover-playlists">
+
+                            <tbody><tr class="form-group">
+                                <td>
+                            Product News
+                            <p class="description">Getting started, new features and the latest product updates on Spotify</p>
+                                </td>
+                                <td class="td-checkbox"><div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="notify-product-news:email" value="1" checked="checked">
+                                        <span class="control-indicator"></span>
+                                        <span class="control-icon"><svg>
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-email"></use>
+                                        </svg></span></label></div>
+
+                                </td>
+                                <td class="td-checkbox"><div class="checkbox">
+                                    <label><input type="checkbox" name="notify-product-news:push" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-push"></use></svg></span></label></div></td></tr><tr class="form-group"><td>
+                            Spotify News and Offers
+                            <p class="description">News, promos and events for you</p></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-news-and-offers:email" value=""><span class="control-indicator"></span><span class="control-icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-email"></use></svg></span></label></div></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-news-and-offers:push" value=""><span class="control-indicator"></span><span class="control-icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-push"></use></svg></span></label></div></td></tr></tbody></table><table class="table table-striped table-recover-playlists"><thead><tr><th class="category">Your Music</th><th><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-email"></use></svg><span class="notification-type">Email</span></th><th><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-push"></use></svg><span class="notification-type">Push</span></th></tr></thead><tbody><tr class="form-group"><td>
+                        Recommended Music
+                        <p class="description">Music we find that we think you’ll like</p></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-recommended-music:email" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-email"></use></svg></span></label></div></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-recommended-music:push" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-push"></use></svg></span></label></div></td></tr><tr class="form-group"><td>
+                        New Music
+                        <p class="description">Fresh tracks from artists you follow or might like</p></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-new-music:email" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-email"></use></svg></span></label></div></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-new-music:push" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-push"></use></svg></span></label></div></td></tr><tr class="form-group"><td>
+                        Playlist Updates
+                        <p class="description">A playlist you follow is updated</p></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-playlist-updates:email" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-email"></use></svg></span></label></div></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-playlist-updates:push" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-push"></use></svg></span></label></div></td></tr><tr class="form-group"><td>
+                        Concert Notifications
+                        <p class="description">Updates about live shows by artists you like, in places near you</p></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-concert-notifications:email" value=""><span class="control-indicator"></span><span class="control-icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-email"></use></svg></span></label></div></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-concert-notifications:push" value=""><span class="control-indicator"></span><span class="control-icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-push"></use></svg></span></label></div></td></tr><tr class="form-group"><td>
+                        Artist Updates
+                        <p class="description">Hear about artists you listen to and artists we think you’ll like</p></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-artist-updates:email" value=""><span class="control-indicator"></span><span class="control-icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-email"></use></svg></span></label></div></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-artist-updates:push" value=""><span class="control-indicator"></span><span class="control-icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-push"></use></svg></span></label></div></td></tr>                </tbody><tfoot><tr><td colspan="3"><div class="row-buttons"><button type="submit" id="notifications_save" name="notifications[save]" class="btn btn-green btn-sm js-gtm-event" data-ga-category="Account Pages" data-ga-action="save notification settings" data-ga-label="save-notifications-account" data-gtm-event-name="save_notifications_button_clicked">Save</button><a href="/us/account/overview/" class="btn btn-sm btn-cancel">Cancel</a></div></td></tr></tfoot><input type="hidden" id="notifications__token" name="notifications[_token]" value="PUR6vp82qhT47jm_D1IWcz2gybcW079Ct3SZsOqmsCI">
+
+                    </table>
+
+                    </form></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<div style="float: left; " class="checkout_container grid__item desk&#45;&#45;one-half">-->
+
+    <!--<div class="checkout_detail checkout_detail_size">-->
+        <!--<div class="col-sm-9">-->
+            <!--<div class="content">-->
+
+
+
+                <!--<div class="page-header">-->
+                    <!--<h1>Notification settings</h1>-->
+                <!--</div>-->
+                <!--<div id="profile" class="article-account">-->
+                    <!--<div class="well">-->
+
+
+
+                        <!--<form name="notifications" method="post" class="form-notifications">-->
+
+                            <!--<table class="table table-striped table-recover-playlists"><thead><tr><th class="category">Spotify Updates</th><th><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-email"></use></svg><span class="notification-type">Email</span></th><th><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-push"></use></svg><span class="notification-type">Push</span></th></tr></thead><tbody><tr class="form-group"><td>-->
+                                <!--Product News-->
+                                <!--<p class="description">Getting started, new features and the latest product updates on Spotify</p></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-product-news:email" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-email"></use></svg></span></label></div></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-product-news:push" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-push"></use></svg></span></label></div></td></tr><tr class="form-group"><td>-->
+                                <!--Spotify News and Offers-->
+                                <!--<p class="description">News, promos and events for you</p></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-news-and-offers:email" value=""><span class="control-indicator"></span><span class="control-icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-email"></use></svg></span></label></div></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-news-and-offers:push" value=""><span class="control-indicator"></span><span class="control-icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-push"></use></svg></span></label></div></td></tr></tbody></table><table class="table table-striped table-recover-playlists"><thead><tr><th class="category">Your Music</th><th><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-email"></use></svg><span class="notification-type">Email</span></th><th><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-push"></use></svg><span class="notification-type">Push</span></th></tr></thead><tbody><tr class="form-group"><td>-->
+                            <!--Recommended Music-->
+                            <!--<p class="description">Music we find that we think you’ll like</p></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-recommended-music:email" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-email"></use></svg></span></label></div></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-recommended-music:push" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-push"></use></svg></span></label></div></td></tr><tr class="form-group"><td>-->
+                            <!--New Music-->
+                            <!--<p class="description">Fresh tracks from artists you follow or might like</p></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-new-music:email" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-email"></use></svg></span></label></div></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-new-music:push" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-push"></use></svg></span></label></div></td></tr><tr class="form-group"><td>-->
+                            <!--Playlist Updates-->
+                            <!--<p class="description">A playlist you follow is updated</p></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-playlist-updates:email" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-email"></use></svg></span></label></div></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-playlist-updates:push" value="1" checked="checked"><span class="control-indicator"></span><span class="control-icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-push"></use></svg></span></label></div></td></tr><tr class="form-group"><td>-->
+                            <!--Concert Notifications-->
+                            <!--<p class="description">Updates about live shows by artists you like, in places near you</p></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-concert-notifications:email" value=""><span class="control-indicator"></span><span class="control-icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-email"></use></svg></span></label></div></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-concert-notifications:push" value=""><span class="control-indicator"></span><span class="control-icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-push"></use></svg></span></label></div></td></tr><tr class="form-group"><td>-->
+                            <!--Artist Updates-->
+                            <!--<p class="description">Hear about artists you listen to and artists we think you’ll like</p></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-artist-updates:email" value=""><span class="control-indicator"></span><span class="control-icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-email"></use></svg></span></label></div></td><td class="td-checkbox"><div class="checkbox"><label><input type="checkbox" name="notify-artist-updates:push" value=""><span class="control-indicator"></span><span class="control-icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-push"></use></svg></span></label></div></td></tr>                </tbody><tfoot><tr><td colspan="3"><div class="row-buttons"><button type="submit" id="notifications_save" name="notifications[save]" class="btn btn-green btn-sm js-gtm-event" data-ga-category="Account Pages" data-ga-action="save notification settings" data-ga-label="save-notifications-account" data-gtm-event-name="save_notifications_button_clicked">Save</button><a href="/us/account/overview/" class="btn btn-sm btn-cancel">Cancel</a></div></td></tr></tfoot><input type="hidden" id="notifications__token" name="notifications[_token]" value="PUR6vp82qhT47jm_D1IWcz2gybcW079Ct3SZsOqmsCI">-->
+
+                        <!--</table>-->
+
+                        <!--</form></div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+    <!--</div>-->
+
+<!--</div>-->
+
+<div style="float: right; " class="checkout_stats grid__item desk--one-half">
+
+    <div class="checkout_detail checkout_stats_size">
 
     </div>
 
