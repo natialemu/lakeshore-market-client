@@ -37,19 +37,32 @@ $(document).ready(function (){
 
     console.log(shoppingCartProducts);
 
+    var source = $("#shopping_cart_modal_template").html();
+    var project_modal_template = Handlebars.compile(source);
+
+    for (var j = 0; j < shoppingCartProducts.length; j++) {
+
+        var productData = {
+            ProductName: ""+shoppingCartProducts[j].productName,
+            PartnerName: ""+shoppingCartProducts[j].partnerName,
+            ProductCost: ""+shoppingCartProducts[j].productCost
+        };
+
+
+
+        var html = project_modal_template(productData);
+
+        $("#activeCartViewForm").append(html);
+    }
+
 
 
 
 
     $('form').submit(function (event) {
 
-        var formData = {
-            'email': getUsername(),
-            'password': getPassword(),
-            'isCustomer':true
-        };
-        console.log(formData);
-        var username = getUsername();
+
+
 
 
 
