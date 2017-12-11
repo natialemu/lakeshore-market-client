@@ -1,11 +1,22 @@
 $(document).ready(function () {
 
+    console.log(document.cookie);
+    var username = getCookie('username');
+    var isCustomer = getCookie('isCustomer');
+    if(!username === "" && !isCustomer === ""){
+        if(isCustomer === "true"){
+            window.location.href = 'buyer/homepage.html';
+        }else{
+            window.location.href ='seller/homepage.html';
+        }
+
+    }
+
     var source = $("#project-modal-template").html();
     var project_modal_template = Handlebars.compile(source);
 
     var productData1 = {
         ProductTitle:"Harry potter",
-        ProductCost: "33",
         ProductType: "something"
 
     };
@@ -52,8 +63,9 @@ $(document).ready(function () {
             'username': getUsername(),
             'email': getEmail(),
             'password': getPassword(),
-            'isCustomer':getUserType() === "customer"
+            'isCustomer':getUserType() === "Customer"
         };
+        console.log(getUserType());
         console.log(formData);
 
         // $.post("http://localhost:8081/account/", function(data, status){
@@ -72,7 +84,17 @@ $(document).ready(function () {
             dataType: 'json',
             encode: true
             }).done(function(data){
-                window.location.href="login.html";
+                if(data.isSuccessful){
+                    if(formData.isCustomer){
+                        window.location.href="login.html";
+                    }else{
+                        window.location.href="seller/partner_login.html";
+                    }
+
+                }else{
+                    alert("user already exists!");
+                }
+
         });
         event.preventDefault();
 
@@ -170,7 +192,7 @@ $(document).ready(function () {
     }
 
     function getUserType(){
-        return $("input[name=user_type]").val();
+        return $('#selectForm').find(":selected").text();
 
     }
 
@@ -183,6 +205,22 @@ $(document).ready(function () {
         return productsToDisplay;
 
 
+    }
+
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i <ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) === ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) === 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
     }
 
 

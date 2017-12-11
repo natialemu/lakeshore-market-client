@@ -11,6 +11,8 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <!-- JQuery-->
+    <script src="scripts/settings-script.js"></script>	<!-- textillate library -->
+
 
 
 
@@ -37,7 +39,7 @@
 
 
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Lakeshore Market</a>
+            <a class="navbar-brand home_button" href="index.html">Lakeshore Market</a>
 
             <!-- start colllapsed navbar  -->
             <div class="navbar-header navbar-right">
@@ -60,12 +62,12 @@
             <!-- start un-colllapsed navbar  -->
             <div class="collapse navbar-collapse mynavigation navbar-right" id="main_navbar">
                 <ul class="nav navbar-nav">
-                    <li class="welcome" ><h4 style="color: #ffffff">Welcome </h4></li>
-                    <li  style="margin-left: 20px;"><a href = "#">Home</a></li>
-                    <li><a href = "#">Shopping cart</a></li>
+                    <li class="welcome" ><h4  style="color: #ffffff">Welcome </h4></li>
+                    <li  style="margin-left: 20px;"><a class="home_button" href = "#">Home</a></li>
+                    <li><a href = "buyer/checkout.html">Shopping cart</a></li>
                     <li class="active"><a href = "#">Account</a></li>
                     <li><a href = "#">Transactions</a></li>
-                    <li><a href = "#">Log out</a></li>
+                    <li><a id="logout_button" href = "#">Log out</a></li>
                 </ul>
             </div><!-- / un-colllapsed navbar  -->
 
@@ -91,22 +93,22 @@
 
 
                             <li class="active" id="submenu-item-account-overview">
-                                <a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-home"></use></svg> Account overview</a>
+                                <a id="accountOverview" href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-home"></use></svg> Account overview</a>
                             </li>
 
 
                             <li id="submenu-item-contact-information">
-                                <a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-redeem"></use></svg>Edit Contact information</a>
+                                <a id="edit_contact_info" href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-redeem"></use></svg>Edit Contact information</a>
                             </li>
 
 
                             <li id="submenu-item-location-information">
-                                <a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-edit"></use></svg> Edit Location preferences</a>
+                                <a id="editBankCard" href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-edit"></use></svg> Edit Bank profile</a>
                             </li>
 
 
                             <li id="submenu-item-payment-information">
-                                <a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-locked"></use></svg> Edit Payment information</a>
+                                <a id="editProfileCard" href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-locked"></use></svg> Edit Payment card profile</a>
                             </li>
 
 
@@ -131,7 +133,7 @@
 
 
 
-                <div class="col-sm-9 overlapping_container ">
+                <div id="left_account_container"class="col-sm-9 overlapping_container ">
 
 
 
@@ -267,7 +269,7 @@
 
 
 <!-- the Edit profile div -->
-<div id="edit profile" class="content" style="display: none;">
+<div id="edit_profile" class="content" style="display: none;">
 
     <div class="content">
 
@@ -403,7 +405,7 @@
 
 
 <!-- the Edit Payment card div -->
-<div id="edit profile_card" class="content" style="display:none;">
+<div id="edit_profile_card" class="content" style="display:none;">
 
     <div class="content">
 
@@ -482,7 +484,7 @@
 </div>
 
 <!-- the Edit Bank info div -->
-<div id="edit profile_bank" class="content" style="display:none;">
+<div id="edit_profile_bank" class="content" style="display:none;">
 
     <div class="content">
 

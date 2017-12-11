@@ -60,11 +60,11 @@
                 <ul class="nav navbar-nav">
                     <li class="welcome" ><h4 id="welcome_text"style="color: #ffffff">Welcome </h4></li>
                     <li class="active" style="margin-left: 20px;"><a href = "#">Home</a></li>
-                    <li><a href = "shopping-cart.html">Shopping cart</a></li>
+                    <li><a href = "checkout.html">Shopping cart</a></li>
                     <li><a href = "../settings.html">Account</a></li>
                     <li><a href = "../seller/orders.html">Orders</a></li>
                     <li><a href = "#">Transactions</a></li>
-                    <li><a href = "../index.html">Log out</a></li>
+                    <li><a id="logout_button" href = "../index.html">Log out</a></li>
                 </ul>
             </div><!-- / un-colllapsed navbar  -->
 
@@ -123,7 +123,7 @@
         <div class="grid__item project__item desk--one--quarter tablet--one-half">
             <div class="caption-panel caption-panel--home">
                 <a class="caption-panel__image-wrapper" data-ga-action="project description 1_Select" data-ga-label="eccomerce, lakeshroe-market" data-ga-value="1">
-                    <div class="caption-panel__image" style="background-color: #a3a3c2">
+                    <div class="caption-panel__image" style="background-image: url('../images/product_placeholder.png');">
 
                     </div>
                 </a>
@@ -176,7 +176,7 @@
 										   </span>
                         </a>
 
-                        <a style="float: right; margin-left:15px;" id="product4" data-ga-action="product description 1_Select" data-ga-label="Add to Cart" data-ga-value="1" >
+                        <a style="float: right; margin-left:15px;" class="add_to_cart" name="{{productID}}" data-ga-action="product description 1_Select" data-ga-label="Add to Cart" data-ga-value="1" >
 										   <span>
 										       Add to cart
 											   <svg viewBox="-2 -2 30 30" class="svg-icon link-icon link-icon-project-color">
@@ -211,6 +211,8 @@
 		<div class="content-container content-row content-row--short">
 
 			<div class="grid" id="content">
+
+
 
 
 

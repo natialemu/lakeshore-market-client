@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <!-- JQuery-->
 
     <link href="../styles/bootstrap.css" rel="stylesheet">
+
     <link href="../styles/checkout-style.css" rel="stylesheet">
 
 
@@ -19,6 +22,7 @@
     <script src="../scripts/bootstrap.min.js"></script> <!-- bootsrap libraries -->
     <title>Checkout</title>
 </head>
+
 <body>
 
 <!-- header -->
@@ -28,7 +32,7 @@
 
 
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Lakeshore Market</a>
+            <a class="navbar-brand home_button" href="index.html">Lakeshore Market</a>
 
             <!-- start colllapsed navbar  -->
             <div class="navbar-header navbar-right">
@@ -52,9 +56,9 @@
             <div class="collapse navbar-collapse mynavigation navbar-right" id="main_navbar">
                 <ul class="nav navbar-nav">
                     <li class="welcome" ><h4 style="color: #ffffff">Welcome </h4></li>
-                    <li  style="margin-left: 20px;"><a href = "#">Home</a></li>
-                    <li><a href = "#">Shopping cart</a></li>
-                    <li class="active"><a href = "#">Account</a></li>
+                    <li  style="margin-left: 20px;"><a class="home_button" href = "#">Home</a></li>
+                    <li class="active"><a href = "#">Shopping cart</a></li>
+                    <li ><a href = "../settings.html">Account</a></li>
                     <li><a href = "#">Transactions</a></li>
                     <li><a href = "#">Log out</a></li>
                 </ul>
@@ -66,7 +70,7 @@
 
 </header>
 
-<div class="a-fixed-right-flipped-grid">
+<div class="a-fixed-right-flipped-grid" style="margin-left: 13px;">
     <div class="a-fixed-right-grid-inner">
 
         <!-- Right div -->
@@ -85,7 +89,10 @@
 
                                 <!-- order subtotal div -->
                                 <div class="sc-subtotal a-spacing-mini">
-                                    <p>This is where stats go</p>
+                                    <p>Total:</p>
+                                    <p>Tax: </p>
+                                    <p>Shipping: </p>
+                                    <p style="text-align: right; margin-right: 50px;">Overall: </p>
 
                                 </div>
 
@@ -93,8 +100,13 @@
 
 
                                 <!-- payment method elector -->
-                                <div class="sc-gift a-spacing-base">
-                                    This is payment type is selected
+                                <div style="margin-top: 40px;" class="sc-gift a-spacing-base">
+                                    <label for="paymentTypePicker"> Payment method</label>
+                                    <select id="paymentTypePicker" class="selectpicker">
+                                        <option>Credit card</option>
+                                        <option>Bank account</option>
+                                    </select>
+
                                 </div>
 
 
@@ -105,21 +117,21 @@
 
                                     <span id="sc-buy-box-ptc-button" class="a-button a-button-span12 a-button-primary">
                                         <span class="a-button-inner">
-                                            <input name="proceedToCheckout" class="a-button-input" type="submit" value="Proceed to checkout" aria-labelledby="sc-buy-box-ptc-button-announce">
+                                            <input name="proceedToCheckout" class="a-button-input" type="submit" value="Continue shopping" aria-labelledby="sc-buy-box-ptc-button-announce">
                                             <span id="sc-buy-box-ptc-button-announce" class="a-button-text" aria-hidden="true">
 
 
-                                                Proceed to checkout
+                                                Continue Shopping
                                             </span>
                                         </span>
                                     </span>
 
                                     <span id="sc-cancel-box-ptc-button" class="a-button a-button-span12 a-button-primary">
                                         <span class="a-button-inner">
-                                            <input name="continueShopping" class="a-button-input" type="submit" value="ContinueShopping" aria-labelledby="sc-buy-box-ptc-button-announce">
+                                            <input name="continueShopping" class="a-button-input" type="submit" value="Purchase" aria-labelledby="sc-buy-box-ptc-button-announce">
                                             <span id="sc-cancel-box-ptc-button-announce" class="a-button-text" aria-hidden="true">
 
-                                                Proceed to checkout
+                                                Purchase
 
                                             </span>
                                         </span>
@@ -182,9 +194,14 @@
                             </div>
                         </div>
 
-                        <!-- this is where the shopping cart modal is inserted -->
+
 
                     </div>
+
+                    <!-- this is where the shopping cart modal is inserted -->
+
+
+                    <div style="clear:both"></div>
 
                 </form>
             </div>
@@ -239,7 +256,7 @@
 
                                                 </a>
                                                 <span class="a-size-base sc-product-creator">
-                                                    {{PartnerName}}
+                                                    by {{PartnerName}}
                                                 </span>
                                             </span>
                                         </li>
@@ -269,7 +286,6 @@
 
                             <span class="a-size-medium a-color-price sc-price sc-white-space-nowrap sc-product-price sc-price-sign a-text-bold">
                                 {{ProductCost}}
-
                             </span>
 
 
@@ -365,23 +381,7 @@
 
 
                                     </select>
-                                    <span tabindex="-1" data-a-class="quantity" class="a-button a-button-dropdown a-button-small a-button-span8 quantity" id="a-autoid-0" style="min-width: 0%;"><span class="a-button-inner"><span class="a-button-text a-declarative" data-action="a-dropdown-button" role="button" tabindex="0" aria-hidden="true" id="a-autoid-0-announce">
-                                        <span class="a-dropdown-label">
-                                            <span class="sc-offscreen-label" aria-label="Quantity">
 
-                                            </span>
-                                        </span>
-                                        <span class="a-dropdown-prompt">
-
-                                            1
-
-                                        </span>
-                                    </span>
-                                        <i class="a-icon a-icon-dropdown">
-
-                                        </i>
-                                    </span>
-                                    </span>
                                 </span>
 
 

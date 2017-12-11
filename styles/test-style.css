@@ -1,0 +1,231 @@
+#portfolio {
+    background: #FFFFFF;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+@media only screen and (max-width: 768px) {
+    .section-intro {
+        max-width: 650px;
+    }
+}
+.section-intro {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 3.6rem;
+    position: relative;
+}
+@media screen and (max-width: 600px) {
+    .row {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .row {
+        width: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+.row {
+    width: 94%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width: 400px) {
+    [class*="col-"] {
+        width: 100% !important;
+        float: none !important;
+        clear: both !important;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    [class*="col-"] {
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width: 768px) {
+    [class*="col-"] {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    [class*="col-"] {
+        padding: 0 18px;
+    }
+}
+.col-twelve, .col-full {
+    width: 100%;
+}
+[class*="col-"] {
+    padding: 0 20px;
+}
+[class*="col-"], .bgrid {
+    float: left;
+}
+.row:before, .row:after {
+    content: "";
+    display: table;
+}
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 400px) {
+    [class*="col-"] {
+        width: 100% !important;
+        float: none !important;
+        clear: both !important;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    [class*="col-"] {
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width: 768px) {
+    [class*="col-"] {
+        padding: 0 15px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    [class*="col-"] {
+        padding: 0 18px;
+    }
+}
+.col-twelve, .col-full {
+    width: 100%;
+}
+[class*="col-"] {
+    padding: 0 20px;
+}
+@media screen and (max-width: 600px) {
+    .row {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+#portfolio .folio-item {
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+@media screen and (max-width: 600px) {
+    [class*="block-mob-"] .bgrid:nth-child(n) {
+        clear: none;
+    }
+}
+.block-1-6 .bgrid:nth-child(6n+1), .block-1-4 .bgrid:nth-child(4n+1), .block-1-3 .bgrid:nth-child(3n+1), .block-1-2 .bgrid:nth-child(2n+1) {
+    clear: both;
+}
+@media screen and (max-width: 400px) {
+    .stack .bgrid {
+        width: 100% !important;
+        float: none !important;
+        clear: both !important;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+    @media screen and (max-width: 600px) {
+        .block-mob-full .bgrid {
+            width: 100%;
+            clear: both;
+        }
+    }
+
+.block-1-2 .bgrid {
+    width: 50%;
+}
+@media only screen and (max-width: 400px) {
+    .bgrid {
+        padding: 0;
+    }
+}
+#portfolio .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+#portfolio .folio-item-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+#portfolio .folio-item-cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    left: -100%;
+}
+@media only screen and (max-width: 400px) {
+    #portfolio .folio-title {
+        font-size: 2.2rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #portfolio .folio-title {
+        font-size: 2.5rem;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    #portfolio .folio-title {
+        font-size: 3.1rem;
+    }
+}
+#portfolio .folio-title {
+    color: #FFFFFF;
+    font-size: 3.3rem;
+    padding: 0 3rem;
+    margin-bottom: 0;
+}
+#portfolio .folio-types {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: "poppins-regular", sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+#portfolio .folio-item-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}

@@ -1,10 +1,21 @@
 $(document).ready(function (){
+
+    var username = getCookie('username');
+    var isCustomer = getCookie('isCustomer');
+    if(!username === "" && !isCustomer === ""){
+        if(isCustomer === "true"){
+            window.location.href = 'buyer/homepage.html';
+        }else{
+            window.location.href ='seller/homepage.html';
+        }
+
+    }
     $('form').submit(function (event) {
 
         var formData = {
             'email': getEmail(),
             'password': getPassword(),
-            'isCustomer':getUserType() === "customer"
+            'isCustomer':true
         };
         console.log(formData);
         var username = getEmail();
@@ -17,16 +28,10 @@ $(document).ready(function (){
                 //$("#login_form").attr('action','buyer/homepage.html');
                 document.cookie =
                     'username='+formData.email+'; path=/';
-
-                if(formData.isCustomer){
-                    window.location.href = "buyer/homepage.html";
-
-                }else{
-                    window.location.href = "seller/homepage.html";
-                }
+                document.cookie='isCustomer='+formData.isCustomer+'; path=/';
 
 
-
+                window.location.href = "buyer/homepage.html";
 
             }else{
                 alert("Incorrect username or password");
@@ -68,9 +73,20 @@ $(document).ready(function (){
 
     }
 
-    function getUserType(){
-        return $("input[name=user_type]").val();
-
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i <ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) === ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) === 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
     }
 
 });

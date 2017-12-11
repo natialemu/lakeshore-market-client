@@ -157,6 +157,7 @@ body h1, body h2, body h3, body h4, body h5 {
 }
 
 .bg-gray-light {
+    opacity: 0.9;
     background-color: #fafbfc !important;
 }
 .rounded-1 {
@@ -281,7 +282,8 @@ dd {
 }
 @media (min-width: 768px) {
     .col-sm-8 {
-        width: 51.66666667% !important;
+        width: 41.66666667% !important;
+        margin-right: 44px;
     }
 }
 
@@ -336,4 +338,13 @@ dd {
 
 html{
     padding: 0 !important;
+}
+
+.navbar-default{
+    background-color:#B71C1C !important;
+    border-color:#B71C1C !important;
+}
+#js-pjax-container{
+    margin-top: 8%;
+
 }

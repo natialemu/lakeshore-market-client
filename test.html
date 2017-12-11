@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <!-- JQuery-->
+
+    <script src="/scripts/buyer/hompage-script.js"></script>
+    <link href="/styles/homepage-style.css" rel="stylesheet">
+    <link href="/styles/portfolio.css" rel="stylesheet">
+    <link href="/styles/bootstrap.css" rel="stylesheet">
+    <link href="/styles/homepage-content-box.css" rel="stylesheet">
+    <link href="/styles/test-style.css" rel="stylesheet">
+
+
+
+
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,600&amp;subset=latin-ext" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet" type="text/css">
+
+    <script src="/scripts/handlebars-v4.0.5.js"></script>	<!-- handlebar library -->
+    <script src="/scripts/bootstrap.min.js"></script> <!-- bootsrap libraries -->
+    <
+    <title>test</title>
+</head>
+<body>
+
+<section id="portfolio">
+
+    <div class="row section-intro">
+        <div class="col-twelve">
+
+            <h5>Portfolio</h5>
+            <h1>Check Out Some of my Projects.</h1>
+
+        </div>
+    </div> <!-- /section-intro-->
+    <center>
+        <div class="row portfolio-content">
+
+            <div class="col-twelve">
+
+                <!-- portfolio-wrapper -->
+                <div id="folio-wrapper" class="block-1-2 block-mob-full stack" style="position: relative; height: 0px;">
+
+                    <div class="bgrid folio-item" style="position: absolute; left: 0px; top: 0px; transition-property: opacity, transform; transition-duration: 0.4s;">
+                        <div class="item-wrap">
+                            <img src="images/scarnes-dice-tile.png" alt="InstaTute">
+                            <a href="#modal-03" class="overlay">
+                                <div class="folio-item-table">
+                                    <div class="folio-item-cell">
+                                        <h3 class="folio-title">InstaTute</h3>
+                                        <span class="folio-types">
+                                                Check out Website
+                                            </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div> <!-- /folio-item -->
+
+                    <div class="bgrid folio-item" style="position: absolute; left: 275px; top: 0px; transition-property: opacity, transform; transition-duration: 0.4s;">
+
+                        <div class="item-wrap">
+                            <img src="images/ngordnet-tile.png" alt="Shutterbug">
+                            <a href="#modal-01" class="overlay">
+                                <div class="folio-item-table">
+                                    <div class="folio-item-cell">
+                                        <h3 class="folio-title">Grouping Trajectory Data</h3>
+                                        <span class="folio-types">
+                                                Check out code on Github
+                                            </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div> <!-- /folio-item -->
+
+                    <div class="bgrid folio-item" style="position: absolute; left: 275px; top: 203px; transition-property: opacity, transform; transition-duration: 0.4s;">
+                        <div class="item-wrap">
+                            <img src="images/touring-musician-tile.png" alt="Clouds">
+                            <a href="#modal-02" class="overlay">
+                                <div class="folio-item-table">
+                                    <div class="folio-item-cell">
+                                        <h3 class="folio-title">Machine Learning Privacy</h3>
+                                        <span class="folio-types">
+                                                Check out Code on Github
+                                            </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div> <!-- /folio-item -->
+
+                    <div class="bgrid folio-item" style="position: absolute; left: 0px; top: 238px; transition-property: opacity, transform; transition-duration: 0.4s;">
+                        <div class="item-wrap">
+                            <img src="images/continental-divide-tile.png" alt="Beetle">
+                            <a href="#modal-05" class="overlay">
+                                <div class="folio-item-table">
+                                    <div class="folio-item-cell">
+                                        <h3 class="folio-title">NBA Shot Prediction</h3>
+                                        <span class="folio-types">
+                                                View Notebook
+                                            </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div> <!-- /folio-item -->
+
+
+                </div> <!-- /folio-item -->
+                <!-- modal popups - begin
+                ============================================================= -->
+                <div id="modal-01" class="popup-modal slider mfp-hide">
+
+                    <div class="media">
+                        <img src="images/portfolio/modals/django.jpg" alt="">
+                    </div>
+
+                    <div class="description-box">
+                        <h4>Computational Geometry </h4>
+                        <p>A Django web application that computes and visualizes the groupings within a trajectory data according to the given definitions of a group</p>
+
+
+                    </div>
+
+                    <div class="link-box">
+                        <a href="https://github.com/achafamo/GroupTrajectoryUI">Github </a>
+                        <a href="#" class="popup-modal-dismiss">Close</a>
+                    </div>
+
+                </div> <!-- /modal-01 -->
+
+                <div id="modal-02" class="popup-modal slider mfp-hide">
+
+                    <div class="media">
+                        <img src="images/portfolio/modals/m-learning.jpg" alt="">
+                    </div>
+
+                    <div class="description-box">
+                        <h4>Machine Learning Privacy</h4>
+                        <p>Adapted several machine learing algorithms to maintain differential privacy on the datasets</p>
+
+                        <div class="categories">Research Project</div>
+                    </div>
+
+                    <div class="link-box">
+                        <a href="https://github.com/achafamo/Machine-Learning-Privacy">Github</a>
+                        <a href="#" class="popup-modal-dismiss">Close</a>
+                    </div>
+
+                </div> <!-- /modal-02 -->
+
+                <div id="modal-03" class="popup-modal slider mfp-hide">
+
+                    <div class="media">
+                        <img src="images/portfolio/modals/instatute.jpg" alt="">
+                    </div>
+
+                    <div class="description-box">
+                        <h4>InstaTute</h4>
+                        <p>
+                            A Ruby on rails web application that takes students' course syllabi and automatically extract important dates and deadlines to create a personalized calendar for
+                            each student
+                        </p>
+
+                    </div>
+
+                    <div class="link-box">
+                        <a href="https://github.com/achafamo/InstaTute-Site">Github</a>
+                        <a href="http://instatutee.herokuapp.com">Visit Site</a>
+
+                    </div>
+
+                </div> <!-- /modal-03 -->
+
+                <div id="modal-04" class="popup-modal slider mfp-hide">
+
+                    <div class="media">
+                        <img src="images/portfolio/modals/m-beetle.jpg" alt="">
+                    </div>
+
+                    <div class="description-box">
+                        <h4>NBA Shot Prediction</h4>
+                        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+                        <div class="categories">Branding</div>
+                    </div>
+
+                    <div class="link-box">
+                        <a href="http://www.behance.net">Details</a>
+                        <a href="#" class="popup-modal-dismiss">Close</a>
+                    </div>
+
+                </div> <!-- /modal-04 -->
+
+                <div id="modal-05" class="popup-modal slider mfp-hide">
+
+                    <div class="media">
+                        <img src="images/portfolio/modals/beetle.jpg" alt="">
+                    </div>
+
+                    <div class="description-box">
+                        <h4>NBA Shot Prediction</h4>
+                        <p>Data acquisition, Hypothesis Testing, Data Visualization, Machine Learning</p>
+
+                        <div class="categories">Data Science Seminar</div>
+                    </div>
+
+                    <div class="link-box">
+                        <a href="https://github.com/achafamo/NBA-Shot-Prediction/blob/master/Final%20Report.ipynb">Jupyter Notebook</a>
+                        <a href="#" class="popup-modal-dismiss">Close</a>
+                    </div>
+
+                </div> <!-- /modal-05 -->
+                <!-- modal popups - end
+                ============================================================= -->
+
+            </div> <!-- /portfolio-wrapper -->
+
+        </div>  <!-- /twelve -->
+        <!-- /portfolio-content -->
+
+    </center></section>
+
+</body>
+</html>
