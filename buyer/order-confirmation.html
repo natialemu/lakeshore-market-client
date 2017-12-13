@@ -14,6 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <!-- JQuery-->
     <script src="../scripts/sign-up-js.js"></script>
     <link href="../styles/settings-style.css" rel="stylesheet">
+    <script src="../scripts/buyer/order-confirmation-script.js"></script>
 
 
 
@@ -38,7 +39,7 @@
 
 
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Lakeshore Market</a>
+            <a class="navbar-brand" href="homepage.html">Lakeshore Market</a>
 
             <!-- start colllapsed navbar  -->
             <div class="navbar-header navbar-right">
@@ -62,8 +63,7 @@
             <div class="collapse navbar-collapse mynavigation navbar-right" id="main_navbar">
                 <ul class="nav navbar-nav">
                     <li class="welcome" ><h4 style="color: #ffffff">Welcome seller</h4></li>
-                    <li style="margin-left: 20px;"><a href = "homepage.html">Home</a></li>
-                    <li><a href = "#">Shopping cart</a></li>
+                    <li><a href = "checkout.html">Shopping cart</a></li>
 
                     <li><a href = "../settings.html">Account</a></li>
                     <li><a href = "#">Transactions</a></li>
@@ -86,7 +86,7 @@
 
 </header>
 
-<div style="margin-left:13.5%;" id="left_account_container"class="col-sm-9 overlapping_container ">
+<div style="margin-left:13.5%; margin-top:70px; float: none; margin-bottom: 120px;" id="left_account_container"class="col-sm-9 overlapping_container ">
     <div  id= "account_summary" class="content">
 
 
@@ -97,103 +97,48 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="well card profile">
-                    <h3 class="text-primary">Profile</h3>
+                    <h3 class="text-primary">Order details</h3>
                     <form role="form">
                         <div class="form-group">
-                            <label class="control-label">Full name</label>
-                            <p class="form-control-static" id="card-profile-fullName">nathnael2</p>
+                            <label class="control-label">Order confirmation number</label>
+                            <p class="form-control-static" id="card-order-confirmation">XXXXXX-0000</p>
                         </div>
 
                         <div class="form-group">
-                            <label class="control-label">Username</label>
-                            <p class="form-control-static" id="card-profile-username">nathnael2</p>
+                            <label class="control-label">Customer name</label>
+                            <p class="form-control-static" id="card-order-fullname">Customer's full name</p>
                         </div>
                         <div class="form-group">
-                            <label class="control-label">Email</label>
-                            <p class="form-control-static" id="card-profile-email">nathnael.alemu@yahoo.com</p>
+                            <label class="control-label">Order date</label>
+                            <p class="form-control-static" id="card-order-date"> ddmmyyy</p>
                         </div>
                         <div class="form-group">
-                            <label class="control-label">Date of birth</label>
-                            <p class="form-control-static" id="card-profile-dob">1/4/95</p>
+                            <label class="control-label">Total cost</label>
+                            <p class="form-control-static" id="card-order-cost">$</p>
                         </div>
-                        <div class="form-group">
-                            <label class="control-label">Country</label>
-                            <p class="form-control-static" id="card-profile-country">US</p>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label">Postal code</label>
-                            <p class="form-control-static" id="card-profile-postalcode">60626</p>
-                        </div>
+
                     </form>
 
-                    <a href="#" class="btn btn-black btn-sm btn-block center-block" id="btn-edit-profile">
-                        Edit profile
+                    <a href="#" class="btn btn-black btn-sm btn-block center-block" id="btn-cancel-order">
+                        Cancel order
+                    </a>
+
+                    <a href="#" class="btn btn-black btn-sm btn-block center-block" id="btn-track-order">
+                        Track order
+                    </a>
+
+                    <a href="#" class="btn btn-black btn-sm btn-block center-block" id="btn-view-order-details">
+                        View order details
                     </a>
                 </div>
             </div>
 
 
-            <div class="col-md-6">
-                <div class="well card profile">
-                    <h3 class="text-primary">Payment card profile</h3>
-                    <form role="form">
-                        <div class="form-group">
-                            <label class="control-label">Full name</label>
-                            <p class="form-control-static" id="card-profile-cardNumber">nathnael2</p>
-                        </div>
 
-                        <div class="form-group">
-                            <label class="control-label">Username</label>
-                            <p class="form-control-static" id="card-profile-securityCode">nathnael2</p>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label">Email</label>
-                            <p class="form-control-static" id="card-profile-expirationDate">nathnael.alemu@yahoo.com</p>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label">Date of birth</label>
-                            <p class="form-control-static" id="card-profile-noc">1/4/95</p>
-                        </div>
-
-                    </form>
-
-                    <a href="#" class="btn btn-black btn-sm btn-block center-block" id="btn-edit-profile-payment">
-                        Edit payment profile
-                    </a>
-                </div>
-            </div>
 
         </div>
 
-        <div class="col-md-6">
-            <div class="well card profile">
-                <h3 class="text-primary">Bank profile</h3>
-                <form role="form">
-                    <div class="form-group">
-                        <label class="control-label">Full name</label>
-                        <p class="form-control-static" id="card-profile-bankName">nathnael2</p>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label">Username</label>
-                        <p class="form-control-static" id="card-profile-acctNum">nathnael2</p>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label">Email</label>
-                        <p class="form-control-static" id="card-profile-routingNum">nathnael.alemu@yahoo.com</p>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label">Date of birth</label>
-                        <p class="form-control-static" id="card-profile-acctType">1/4/95</p>
-                    </div>
-
-                </form>
-
-                <a href="#" class="btn btn-black btn-sm btn-block center-block" id="btn-edit-profile-bank">
-                    Edit bank profile
-                </a>
-            </div>
-        </div>
+       
 
 
 
@@ -204,6 +149,33 @@
 
 
 </div>
+
+<footer class="hashcode-footer mdl-mini-footer">
+    <div class="mdl-mini-footer__left-section">
+        <p class="mdl-typography--font-light">
+
+            © 2017 Lakeshore Market
+
+            <a href="#">
+                Sign up for an account
+            </a>
+
+            <a href="login.html">
+                Customer Sign in
+            </a>
+            <a href="seller/partner_login.html">
+                Partner Sign in
+            </a>
+
+            <a href="#">
+                About Lakeshore Market
+            </a>
+
+        </p>
+    </div>
+
+</footer>
+
 
 </body>
 </html>

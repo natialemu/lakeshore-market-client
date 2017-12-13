@@ -8,6 +8,8 @@
     <link href="styles/checkout-style.css" rel="stylesheet">
     <link href="styles/settings-style.css" rel="stylesheet">
     <link href="styles/bootstrap.css" rel="stylesheet">
+    <link href="styles/maia.experimental.css" rel="stylesheet">
+
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <!-- JQuery-->
@@ -39,7 +41,8 @@
 
 
         <div class="container-fluid">
-            <a class="navbar-brand home_button" href="index.html">Lakeshore Market</a>
+
+            <a class="home_button navbar-brand home_button" >Lakeshore Market</a>
 
             <!-- start colllapsed navbar  -->
             <div class="navbar-header navbar-right">
@@ -63,7 +66,6 @@
             <div class="collapse navbar-collapse mynavigation navbar-right" id="main_navbar">
                 <ul class="nav navbar-nav">
                     <li class="welcome" ><h4  style="color: #ffffff">Welcome </h4></li>
-                    <li  style="margin-left: 20px;"><a class="home_button" href = "#">Home</a></li>
                     <li><a href = "buyer/checkout.html">Shopping cart</a></li>
                     <li class="active"><a href = "#">Account</a></li>
                     <li><a href = "#">Transactions</a></li>
@@ -97,22 +99,22 @@
                             </li>
 
 
-                            <li id="submenu-item-contact-information">
+                            <li class="" id="submenu-item-contact-information">
                                 <a id="edit_contact_info" href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-redeem"></use></svg>Edit Contact information</a>
                             </li>
 
 
-                            <li id="submenu-item-location-information">
+                            <li class="" id="submenu-item-bank-information">
                                 <a id="editBankCard" href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-edit"></use></svg> Edit Bank profile</a>
                             </li>
 
 
-                            <li id="submenu-item-payment-information">
+                            <li class="" id="submenu-item-payment-card-information">
                                 <a id="editProfileCard" href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-locked"></use></svg> Edit Payment card profile</a>
                             </li>
 
 
-                            <li id="submenu-item-change-password">
+                            <li class="" id="submenu-item-change-password">
                                 <a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-notifications"></use></svg> Change password</a>
                             </li>
 
@@ -169,28 +171,28 @@
                 <form role="form">
                     <div class="form-group">
                         <label class="control-label">Full name</label>
-                        <p class="form-control-static" id="card-profile-fullName">nathnael2</p>
+                        <p class="form-control-static" id="card-profile-fullName">Full name</p>
                     </div>
 
                     <div class="form-group">
                         <label class="control-label">Username</label>
-                        <p class="form-control-static" id="card-profile-username">nathnael2</p>
+                        <p class="form-control-static" id="card-profile-username">username</p>
                     </div>
                     <div class="form-group">
                         <label class="control-label">Email</label>
-                        <p class="form-control-static" id="card-profile-email">nathnael.alemu@yahoo.com</p>
+                        <p class="form-control-static" id="card-profile-email">email@email.com</p>
                     </div>
                     <div class="form-group">
                         <label class="control-label">Date of birth</label>
                         <p class="form-control-static" id="card-profile-dob">1/4/95</p>
                     </div>
                     <div class="form-group">
-                        <label class="control-label">Country</label>
-                        <p class="form-control-static" id="card-profile-country">US</p>
+                        <label class="control-label">City</label>
+                        <p class="form-control-static" id="card-profile-ciy">City</p>
                     </div>
                     <div class="form-group">
-                        <label class="control-label">Postal code</label>
-                        <p class="form-control-static" id="card-profile-postalcode">60626</p>
+                        <label class="control-label">Country</label>
+                        <p class="form-control-static" id="card-profile-country">Country</p>
                     </div>
                 </form>
 
@@ -206,21 +208,21 @@
                 <h3 class="text-primary">Payment card profile</h3>
                 <form role="form">
                     <div class="form-group">
-                        <label class="control-label">Full name</label>
-                        <p class="form-control-static" id="card-profile-cardNumber">nathnael2</p>
+                        <label class="control-label">Name on card</label>
+                        <p class="form-control-static" id="card-profile-noc">Name on card</p>
                     </div>
 
                     <div class="form-group">
-                        <label class="control-label">Username</label>
-                        <p class="form-control-static" id="card-profile-securityCode">nathnael2</p>
+                        <label class="control-label">Card number</label>
+                        <p class="form-control-static" id="card-profile-cardNumber">XXXX-XXXX-XXXXX-1234</p>
                     </div>
                     <div class="form-group">
-                        <label class="control-label">Email</label>
-                        <p class="form-control-static" id="card-profile-expirationDate">nathnael.alemu@yahoo.com</p>
+                        <label class="control-label">Expiration date</label>
+                        <p class="form-control-static" id="card-profile-expirationDate">mm/dd/yyy</p>
                     </div>
                     <div class="form-group">
-                        <label class="control-label">Date of birth</label>
-                        <p class="form-control-static" id="card-profile-noc">1/4/95</p>
+                        <label class="control-label">Security code</label>
+                        <p class="form-control-static" id="card-profile-securityCode">123</p>
                     </div>
 
                 </form>
@@ -238,21 +240,21 @@
             <h3 class="text-primary">Bank profile</h3>
             <form role="form">
                 <div class="form-group">
-                    <label class="control-label">Full name</label>
-                    <p class="form-control-static" id="card-profile-bankName">nathnael2</p>
+                    <label class="control-label">Bank name</label>
+                    <p class="form-control-static" id="card-profile-bankName">Bank name</p>
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label">Username</label>
-                    <p class="form-control-static" id="card-profile-acctNum">nathnael2</p>
+                    <label class="control-label">Account type</label>
+                    <p class="form-control-static" id="card-profile-acctType">Checking/Savings</p>
                 </div>
                 <div class="form-group">
-                    <label class="control-label">Email</label>
-                    <p class="form-control-static" id="card-profile-routingNum">nathnael.alemu@yahoo.com</p>
+                    <label class="control-label">Account number</label>
+                    <p class="form-control-static" id="card-profile-acctNum">XXXXXXXXXXX-1234</p>
                 </div>
                 <div class="form-group">
-                    <label class="control-label">Date of birth</label>
-                    <p class="form-control-static" id="card-profile-acctType">1/4/95</p>
+                    <label class="control-label">Routing number</label>
+                    <p class="form-control-static" id="card-profile-routingNum">12344567</p>
                 </div>
 
             </form>
@@ -294,100 +296,58 @@
 
 
                     <div class="form-group">
-                        <label class="control-label" for="profile_email">Email</label>
-                        <input type="email" id="profile_email" name="profile[email]" required="" data-rule-remote="/xhr/json/isEmailAvailable.php" class="form-control" data-msg-required="You must specify your email." data-msg-email="The email address you supplied is invalid, please check to ensure it is correct." data-msg-remote="We're sorry, that email is taken." value="nathnael.alemu@yahoo.com">
+                        <label class="control-label" for="profile_fullName">Full name</label>
+                        <input type="text" id="profile_fullName" name="fullName" required=""  class="form-control"  data-msg-email="The email address you supplied is invalid, please check to ensure it is correct."  placeholder="Full name">
                     </div>
 
                     <div class="form-group">
-                        <label class="control-label" for="profile_confirmPassword">Confirm password</label>
-                        <input type="password" id="profile_confirmPassword" name="profile[confirmPassword]" disabled="disabled" class="form-control">
+                        <label class="control-label" for="profile_cellphone">Cell phone</label>
+                        <input type="text" id="profile_cellphone" name="cellphone" class="form-control" placeholder="XXXXXXXXXX">
                     </div>
 
                     <div class="form-group">
-                        <label class="control-label" for="profile_postalCode">Postal code</label>
-                        <input type="text" id="profile_postalCode" name="profile[postalCode]" required="" maxlength="10" class="form-control" value="60626">
+                        <label class="control-label" for="profile_dateofbirth">Date of Birth</label>
+                        <input type="text" id="profile_dateofbirth" name="dateofbirth" required="" maxlength="10" class="form-control" placeholder="mmddyyyy">
                     </div>
 
                     <div class="form-group">
-                        <label class="control-label" for="profile_gender">Gender</label>
-                        <select id="profile_gender" name="profile[gender]" required="" class="form-control">
-                            <option value="male" selected="selected">Male</option>
-                            <option value="female">Female</option>
-                            <option value="neutral">Non-binary</option>
-                        </select>
+                        <label class="control-label" for="profile_address">Street address</label>
+                        <input type="text" id="profile_address" name="address" required="" maxlength="10" class="form-control" placeholder="Enter your street address">
                     </div>
+
                     <div class="form-group">
-                        <label class="control-label">Date of birth</label>
-                        <div id="profile_birthdate" class="bootstrap-date row">
-                            <div class="col-xs-4">
-                                <select id="profile_birthdate_month" name="profile[birthdate][month]" required="" class="form-control">
-                                    <option value="1" selected="selected">01</option>
-                                    <option value="2">02</option><option value="3">03</option>
-                                    <option value="4">04</option><option value="5">05</option>
-                                    <option value="6">06</option><option value="7">07</option>
-                                    <option value="8">08</option><option value="9">09</option>
-                                    <option value="10">10</option><option value="11">11</option>
-                                    <option value="12">12</option>
-                                </select>
-                            </div>
-                            <div class="col-xs-4">
-                                <select id="profile_birthdate_day" name="profile[birthdate][day]" required="" class="form-control">
-                                    <option value="1">01</option>
-                                    <option value="2">02</option>
-                                    <option value="3">03</option>
-                                    <option value="4" selected="selected">04</option>
-                                    <option value="5">05</option>
-                                    <option value="6">06</option>
-                                    <option value="7">07</option>
-                                    <option value="8">08</option>
-                                    <option value="9">09</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                    <option value="1900">1900</option>
-                                </select>
-                            </div>
-                        </div>
+                        <label class="control-label" for="profile_city">City</label>
+                        <input type="text" id="profile_city" name="city" required="" maxlength="10" class="form-control" placeholder="Enter your city">
                     </div>
+
                     <div class="form-group">
-                        <label class="control-label" for="profile_country">Country</label>
-                        <select id="profile_country" name="profile[country]" disabled="disabled" required="" class="form-control">
-                            <option value="US" selected="selected">USA</option>
-                        </select>
-                        <span class="help-block">Read more about
-                            <a href="https://support.spotify.com/learn-more/faq/#!/article/How-can-I-change-my-country-setting">changing your country.</a>
-                        </span>
+                        <label class="control-label" for="profile_state">State</label>
+                        <input type="text" id="profile_state" name="state" required="" maxlength="10" class="form-control" placeholder="Enter your state">
                     </div>
+
                     <div class="form-group">
-                        <div id="profile_mobile">
-                            <div class="form-group">
-                                <label class="control-label" for="profile_mobile_number">Mobile phone number
-                                </label>
-                                <input type="text" id="profile_mobile_number" name="profile[mobile][number]" class="form-control" value="4439624857">
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label" for="profile_mobile_brand">Mobile phone</label>
-                                <select id="profile_mobile_brand" name="profile[mobile][brand]" class="form-control valid">
-                                    <option value="">Please Select</option>
-                                    <option value="Android">Android</option>
-                                    <option value="Clearwire">Clearwire</option>
-                                    <option value="U.S. Cellular">U.S. Cellular</option>
-                                    <option value="Cricket">Cricket</option>
-                                </select>
-                            </div>
-                        </div>
+                        <label class="control-label" for="profile_zipcode">Zip code</label>
+                        <input type="text" id="profile_zipcode" name="zipcode" required="" maxlength="10" class="form-control" placeholder="Enter your zipcode">
                     </div>
-                    <div class="form-group">
-                        <div id="profile_send">
-                            <div class="form-group">
-                                <div class="checkbox">
-                                    <label for="profile_send_third_party_email">
-                                        <input type="checkbox" id="profile_send_third_party_email" name="profile[send][third_party_email]" value="1">
-                        Share my registration data with Spotify's content providers for marketing purposes.<span class="control-indicator"></span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+
+
+
+
+
+
+                    <!--<div class="form-group">-->
+                        <!--<div id="profile_send">-->
+                            <!--<div class="form-group">-->
+                                <!--<div class="checkbox">-->
+                                    <!--<label for="profile_send_third_party_email">-->
+                                        <!--<input type="checkbox" id="profile_send_third_party_email" name="profile[send][third_party_email]" value="1">-->
+                        <!--Share my registration data with Lakeshore market's content providers for marketing purposes.<span class="control-indicator"></span>-->
+                                    <!--</label>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
 
                     <div class="row-buttons-bordered">
                         <button type="submit" id="profile_save_profile" name="profile[save_profile]" class="btn-sm js-gtm-event btn btn-primary" data-ga-category="Account Pages" data-ga-action="save profile" data-ga-label="save-profile-account" data-gtm-event-name="save_profile_button_clicked">Save profile</button>
@@ -430,40 +390,40 @@
 
 
                     <div class="form-group">
-                        <label class="control-label" for="profile_NameOnCard">Email</label>
-                        <input type="text" id="profile_NameOnCard" name="profile[name_on_card]" required="" data-rule-remote="/xhr/json/isEmailAvailable.php" class="form-control" data-msg-required="You must specify your email." data-msg-email="The email address you supplied is invalid, please check to ensure it is correct." data-msg-remote="We're sorry, that email is taken." value="nathnael.alemu@yahoo.com">
+                        <label class="control-label" for="profile_NameOnCard">Name on card</label>
+                        <input type="text" id="profile_NameOnCard" name="name_on_card" placeholder="Name on card">
                     </div>
 
                     <div class="form-group">
-                        <label class="control-label" for="profile_card_number">Confirm password</label>
-                        <input type="text" id="profile_card_number" name="profile[card_number]" disabled="disabled" class="form-control">
+                        <label class="control-label" for="profile_card_number">Card number</label>
+                        <input type="text" id="profile_card_number" name="card_number"  class="form-control" placeholder="XXXXXXXXXX" >
                     </div>
 
                     <div class="form-group">
                         <label class="control-label" for="profile_expirationDate">ExpirationDate</label>
-                        <input type="text" id="profile_expirationDate" name="profile[expirationDate]" required="" maxlength="10" class="form-control" value="mm/dd/yyyy">
+                        <input type="text" id="profile_expirationDate" name="expirationDate" required="" maxlength="10" class="form-control" placeholder="mmddyyyy">
                     </div>
 
                     <div class="form-group">
                         <label class="control-label" for="profile_security_code">Security code</label>
-                        <input type="password" id="profile_security_code" name="profile[expirationDate]" required="" maxlength="10" class="form-control" value="60626">
+                        <input type="text" id="profile_security_code" name="securityCode" required="" maxlength="10" class="form-control" placeholder="Enter your security code">
                     </div>
 
                     <div class="form-group">
                         <label class="control-label" for="profile_bStreetAddress">Billing street address</label>
-                        <input type="password" id="profile_bStreetAddress" name="profile[expirationDate]" required="" maxlength="10" class="form-control" value="60626">
+                        <input type="password" id="profile_bStreetAddress" name="billingAddress" required="" maxlength="10" class="form-control" placeholder="Enter your billing Street address">
                     </div>
                     <div class="form-group">
                         <label class="control-label" for="profile_bcity">Billing city</label>
-                        <input type="password" id="profile_bcity" name="profile[expirationDate]" required="" maxlength="10" class="form-control" value="60626">
+                        <input type="password" id="profile_bcity" name="billingCity" required="" maxlength="10" class="form-control" placeholder="Enter your billing city">
                     </div>
                     <div class="form-group">
                         <label class="control-label" for="profile_bstate">Billing state</label>
-                        <input type="password" id="profile_bstate" name="profile[expirationDate]" required="" maxlength="10" class="form-control" value="60626">
+                        <input type="password" id="profile_bstate" name="billingState" required="" maxlength="10" class="form-control" placeholder="Enter your billing state">
                     </div>
                     <div class="form-group">
                         <label class="control-label" for="profile_bzipcode">Billing zipcode</label>
-                        <input type="password" id="profile_bzipcode" name="profile[expirationDate]" required="" maxlength="10" class="form-control" value="60626">
+                        <input type="password" id="profile_bzipcode" name="billingZipcode" required="" maxlength="10" class="form-control" placeholder="Enter your billing zipcode">
                     </div>
 
 
@@ -509,23 +469,25 @@
 
 
                     <div class="form-group">
-                        <label class="control-label" for="profile_bankName">Email</label>
-                        <input type="text" id="profile_bankName" name="profile[name_on_card]" required="" data-rule-remote="/xhr/json/isEmailAvailable.php" class="form-control" data-msg-required="You must specify your email." data-msg-email="The email address you supplied is invalid, please check to ensure it is correct." data-msg-remote="We're sorry, that email is taken." value="nathnael.alemu@yahoo.com">
+                        <label class="control-label" for="profile_bankName">Bank name</label>
+                        <input type="text" id="profile_bankName" name="bankName" required="" data-rule-remote="/xhr/json/isEmailAvailable.php" class="form-control" placeholder="Enter name of your bank">
                     </div>
 
                     <div class="form-group">
-                        <label class="control-label" for="profile_acct_number">Confirm password</label>
-                        <input type="text" id="profile_acct_number" name="profile[card_number]" disabled="disabled" class="form-control">
+                        <label class="control-label" for="profile_acct_type">Account type</label>
+                        <input type="text" id="profile_acct_type" name="accountType" required="" maxlength="10" class="form-control" placeholder="Checking/Savings">
                     </div>
 
                     <div class="form-group">
-                        <label class="control-label" for="profile_acct_type">ExpirationDate</label>
-                        <input type="text" id="profile_acct_type" name="profile[expirationDate]" required="" maxlength="10" class="form-control" value="mm/dd/yyyy">
+                        <label class="control-label" for="profile_acct_number">Account number</label>
+                        <input type="text" id="profile_acct_number" name="accountNumber"  class="form-control" placeholder="XXXXXXXXXX">
                     </div>
 
+
+
                     <div class="form-group">
-                        <label class="control-label" for="profile_routingNumber">Security code</label>
-                        <input type="password" id="profile_routingNumber" name="profile[expirationDate]" required="" maxlength="10" class="form-control" value="60626">
+                        <label class="control-label" for="profile_routingNumber">Routing number</label>
+                        <input type="text" id="profile_routingNumber" name="routingNumber" required="" maxlength="10" class="form-control" Placeholder="Enter routing number">
                     </div>
 
 
@@ -554,6 +516,31 @@
 
 
 
+<footer class="hashcode-footer mdl-mini-footer">
+    <div class="mdl-mini-footer__left-section">
+        <p class="mdl-typography--font-light">
+
+            © 2017 Lakeshore Market
+
+            <a href="#">
+                Sign up for an account
+            </a>
+
+            <a href="login.html">
+                Customer Sign in
+            </a>
+            <a href="seller/partner_login.html">
+                Partner Sign in
+            </a>
+
+            <a href="#">
+                About Lakeshore Market
+            </a>
+
+        </p>
+    </div>
+
+</footer>
 
 </body>
 </html>

@@ -794,3 +794,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 }
 
+.navbar-default{
+    background-color:#B71C1C !important;
+    border-color:#B71C1C !important;
+}
+

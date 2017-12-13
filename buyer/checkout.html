@@ -5,11 +5,16 @@
 
     <meta charset="UTF-8">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <!-- JQuery-->
 
     <link href="../styles/bootstrap.css" rel="stylesheet">
 
     <link href="../styles/checkout-style.css" rel="stylesheet">
+    <link href="../styles/maia.experimental.css" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <!-- JQuery-->
+
+    <script src="../scripts/buyer/checkout-script.js"></script>
 
 
 
@@ -115,16 +120,6 @@
                                 <!-- Cancel and buy buttons -->
                                 <div class="sc-proceed-to-checkout" style="min-height: 31px;">
 
-                                    <span id="sc-buy-box-ptc-button" class="a-button a-button-span12 a-button-primary">
-                                        <span class="a-button-inner">
-                                            <input name="proceedToCheckout" class="a-button-input" type="submit" value="Continue shopping" aria-labelledby="sc-buy-box-ptc-button-announce">
-                                            <span id="sc-buy-box-ptc-button-announce" class="a-button-text" aria-hidden="true">
-
-
-                                                Continue Shopping
-                                            </span>
-                                        </span>
-                                    </span>
 
                                     <span id="sc-cancel-box-ptc-button" class="a-button a-button-span12 a-button-primary">
                                         <span class="a-button-inner">
@@ -136,6 +131,18 @@
                                             </span>
                                         </span>
                                     </span>
+
+                                    <span id="sc-buy-box-ptc-button" class="a-button a-button-span12 a-button-primary">
+                                        <span class="a-button-inner">
+                                            <input name="proceedToCheckout" class="a-button-input" type="submit" value="Continue shopping" aria-labelledby="sc-buy-box-ptc-button-announce">
+                                            <span id="sc-buy-box-ptc-button-announce" class="a-button-text" aria-hidden="true">
+
+
+                                                Continue Shopping
+                                            </span>
+                                        </span>
+                                    </span>
+
 
                                 </div>
 
@@ -402,6 +409,35 @@
     </div>
 
 </script>
+
+
+
+
+<footer class="hashcode-footer mdl-mini-footer">
+    <div class="mdl-mini-footer__left-section">
+        <p class="mdl-typography--font-light">
+
+            © 2017 Lakeshore Market
+
+            <a href="#">
+                Sign up for an account
+            </a>
+
+            <a href="login.html">
+                Customer Sign in
+            </a>
+            <a href="seller/partner_login.html">
+                Partner Sign in
+            </a>
+
+            <a href="#">
+                About Lakeshore Market
+            </a>
+
+        </p>
+    </div>
+
+</footer>
 
 </body>
 </html>

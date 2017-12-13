@@ -598,3 +598,7 @@ input, select, textarea {
 .a-button-span8 {
     width: 67%!important;
 }
+.navbar-default{
+    background-color:#B71C1C !important;
+    border-color:#B71C1C !important;
+}
